@@ -368,6 +368,27 @@ input,textarea{
     border-radius:20px;
 }
 
+/* Map container: lets the embed shrink inside the grid on any screen */
+.map{
+    width:100%;
+    min-width:0;
+}
+
+.map iframe{
+    display:block;
+    max-width:100%;
+}
+
+/* Get Directions button (uses the existing .btn .btn-primary styling) */
+.directions-wrap{
+    margin-top:20px;
+}
+
+.directions-btn{
+    max-width:100%;
+    text-align:center;
+}
+
 footer{
     background:#0f172a;
     color:white;
@@ -481,6 +502,23 @@ font-size:.8rem;
 .logo{
 font-size:.95rem;
 max-width:55%;
+}
+
+}
+
+/* Mobile: map height and full-width, easy-to-tap directions button */
+@media(max-width:768px){
+
+.map iframe{
+min-height:320px;
+}
+
+.directions-btn{
+display:block;
+width:100%;
+max-width:340px;
+margin-left:auto;
+margin-right:auto;
 }
 
 }
@@ -779,7 +817,13 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 
 <div class="map">
 <iframe
-src="https://maps.google.com/maps?q=Bhagabanpur%20West%20Bengal&t=&z=13&ie=UTF8&iwloc=&output=embed">
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.39265958043572!2d88.42513132701136!3d22.493579643940627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0273b003439ce1%3A0x77d2f111e1c5d458!2s2no%20shiv%20mandir!5e0!3m2!1sen!2sin!4v1795205443360!5m2!1sen!2sin"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin">
 </iframe>
 </div>
 
@@ -790,6 +834,10 @@ src="https://maps.google.com/maps?q=Bhagabanpur%20West%20Bengal&t=&z=13&ie=UTF8&
 <p><strong data-bn="ফোন:">Phone:</strong> +91 9876543210</p>
 <p><strong data-bn="হোয়াটসঅ্যাপ:">WhatsApp:</strong> +91 9876543210</p>
 <p><strong data-bn="ইমেইল:">Email:</strong> info@srijuniparkclub.org</p>
+
+<div class="directions-wrap">
+<a href="https://maps.app.goo.gl/LdnSEz5Kdf5rQKaK7" class="btn btn-primary directions-btn" target="_blank" rel="noopener noreferrer" data-bn="📍 পথনির্দেশ দেখুন">📍 Get Directions</a>
+</div>
 </div>
 
 </div>
