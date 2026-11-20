@@ -1,15 +1,2077 @@
-Length: 33880
-Starts with: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initia
-Ends with: arget=document.querySelector(a.getAttribute('href'));
-if(target){
-spy.observe(target);
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="2 No. Khudirabad Srijuni Park Club, Bhagabanpur, West Bengal – unity, culture and community service: festivals, sports, blood donation camps, membership and social welfare.">
+<meta name="theme-color" content="#0F766E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="2 No. Khudirabad Srijuni Park Club">
+<meta property="og:title" content="2 No. Khudirabad Srijuni Park Club">
+<meta property="og:description" content="2 No. Khudirabad Srijuni Park Club, Bhagabanpur, West Bengal – unity, culture and community service: festivals, sports, blood donation camps and social welfare.">
+<meta property="og:image" content="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="bn_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2 No. Khudirabad Srijuni Park Club">
+<meta name="twitter:description" content="2 No. Khudirabad Srijuni Park Club, Bhagabanpur, West Bengal – unity, culture and community service: festivals, sports, blood donation camps and social welfare.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg">
+<meta name="keywords" content="Club, Community, Khudirabad, Srijuni Park, Bhagabanpur, West Bengal, Durga Puja, Membership, Festival Calendar">
+<meta name="author" content="2 No. Khudirabad Srijuni Park Club">
+
+<title>2 No. Khudirabad Srijuni Park Club</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bengali font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* =========================================================
+   THEME VARIABLES & COLOR PALETTE
+   Easy to customize for future maintenance
+========================================================= */
+:root{
+--primary:#0F766E;--primary-dark:#0B5A54;--secondary:#2563EB;--accent:#F59E0B;--dark:#0F172A;--light:#F8FAFC;
+--white:#ffffff;--bg:#F8FAFC;--text:#334155;--heading:#0F172A;
+--shadow:0 10px 30px rgba(15,23,42,.10);--shadow-lg:0 20px 45px rgba(15,23,42,.18);
+--card-bg:rgba(255,255,255,.86);--card-solid:#ffffff;--input-bg:#ffffff;--border:#E2E8F0;--accent-text:#0F766E;--radius:20px;
+/* Category colors for Calendar */
+--cat-festival:#EF4444;--cat-festival-bg:rgba(239,68,68,.12);
+--cat-national:#10B981;--cat-national-bg:rgba(16,185,129,.12);
+--cat-club:#2563EB;--cat-club-bg:rgba(37,99,235,.12);
+--cat-meeting:#F97316;--cat-meeting-bg:rgba(249,115,22,.12);
 }
+
+/* Dark mode */
+.dark-mode{
+--bg:#0B1220;--text:#CBD5E1;--white:#111C30;--heading:#F1F5F9;
+--card-bg:rgba(17,28,48,.82);--card-solid:#111C30;--input-bg:#17233A;--border:#26344D;--accent-text:#2DD4BF;
+--shadow:0 10px 30px rgba(0,0,0,.5);--shadow-lg:0 20px 45px rgba(0,0,0,.65);color-scheme:dark;
+--cat-festival-bg:rgba(239,68,68,.2);
+--cat-national-bg:rgba(16,185,129,.2);
+--cat-club-bg:rgba(37,99,235,.22);
+--cat-meeting-bg:rgba(249,115,22,.22);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif;}
+html{scroll-behavior:smooth;scroll-padding-top:80px;}
+
+/* Bengali font when Bengali is active (icons excluded) */
+html[lang="bn"] *:not(i){font-family:'Noto Sans Bengali','Outfit',sans-serif;}
+
+body{background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7;transition:background .3s,color .3s;}
+img{max-width:100%;display:block;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;}
+
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--dark);padding:10px 18px;border-radius:999px;z-index:2000;font-weight:600;text-decoration:none;}
+.skip-link:focus{left:12px;}
+
+.container{width:90%;max-width:1200px;margin:auto;}
+section{padding:92px 0;scroll-margin-top:60px;}
+section:nth-of-type(even){background:rgba(15,118,110,.045);}
+
+/* Section headings */
+.section-title{text-align:center;margin-bottom:52px;}
+.section-title h2{font-size:44px;font-weight:800;line-height:1.18;color:var(--accent-text);letter-spacing:-.01em;}
+.section-title h2::after{content:'';display:block;width:72px;height:5px;margin:16px auto 0;border-radius:5px;background:linear-gradient(90deg,var(--primary),var(--accent));}
+.section-title p{opacity:.85;margin-top:14px;font-size:1.05rem;max-width:680px;margin-left:auto;margin-right:auto;}
+
+/* Buttons */
+.btn{padding:15px 32px;min-height:50px;border:none;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:#fff;font-size:1rem;font-weight:600;line-height:1.2;box-shadow:0 10px 25px rgba(0,0,0,.15);transition:transform .3s,box-shadow .3s,background .3s;cursor:pointer;}
+.btn-primary{background:var(--primary);}
+.btn-primary:hover{background:var(--primary-dark);}
+.btn-secondary{background:var(--secondary);}
+.btn-secondary:hover{background:#1D4ED8;}
+.btn-accent{background:var(--accent);color:var(--dark);}
+.btn-accent:hover{background:#D97706;color:#fff;}
+.btn-outline{background:transparent;color:var(--accent-text);border:2px solid var(--primary);box-shadow:none;}
+.btn-outline:hover{background:var(--primary);color:#fff;}
+.btn-sm{padding:10px 20px;min-height:40px;font-size:.9rem;}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 14px 30px rgba(0,0,0,.2);}
+
+/* Glassmorphism Surface */
+.glass{background:var(--card-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--border);box-shadow:var(--shadow);}
+
+/* Header / navbar (glassmorphism) */
+header{position:fixed;top:0;left:0;width:100%;z-index:999;background:rgba(15,23,42,.58);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-bottom:1px solid rgba(255,255,255,.12);transition:background .3s,box-shadow .3s;}
+header.scrolled{background:rgba(15,23,42,.92);box-shadow:0 8px 30px rgba(0,0,0,.25);}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 4%;max-width:1540px;margin:auto;}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:.98rem;line-height:1.2;flex-shrink:0;}
+.logo-img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.35);}
+.nav-links{display:flex;gap:4px;flex-wrap:nowrap;}
+.nav-links a{color:rgba(255,255,255,.88);text-decoration:none;padding:8px 11px;border-radius:999px;font-weight:500;font-size:.88rem;transition:background .3s,color .3s;white-space:nowrap;}
+.nav-links a:hover{background:rgba(255,255,255,.15);color:#fff;}
+.nav-links a.active{background:var(--accent);color:var(--dark);font-weight:600;}
+.menu-btn{display:none;font-size:1.5rem;color:#fff;cursor:pointer;width:44px;height:44px;line-height:44px;text-align:center;}
+.dark-toggle{cursor:pointer;color:#fff;font-size:1.15rem;width:42px;height:42px;line-height:42px;text-align:center;border-radius:50%;transition:background .3s;}
+.dark-toggle:hover{background:rgba(255,255,255,.15);}
+.nav-controls{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.lang-toggle{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:7px 14px;min-height:38px;font-size:.84rem;font-weight:600;cursor:pointer;transition:.3s;white-space:nowrap;}
+.lang-toggle:hover{background:var(--primary);border-color:var(--primary);}
+
+/* Hero */
+.hero{min-height:100vh;min-height:100svh;background:linear-gradient(rgba(15,23,42,.65),rgba(15,23,42,.72)),url('club-building.jpg.png') center/cover no-repeat,#0F172A;display:flex;align-items:center;text-align:center;color:#fff;padding:120px 0 80px;}
+.hero-content{width:100%;}
+.hero h1{font-size:80px;font-weight:800;line-height:1.08;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(0,0,0,.45);text-wrap:balance;overflow-wrap:break-word;margin-bottom:20px;animation:fadeUp .9s ease both;}
+.hero p{font-size:1.35rem;margin-bottom:36px;text-shadow:0 2px 12px rgba(0,0,0,.4);animation:fadeUp .9s .2s ease both;}
+.hero-buttons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;animation:fadeUp .9s .4s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+
+.about-card{padding:44px;border-radius:var(--radius);font-size:1.1rem;line-height:1.9;border-left:6px solid var(--accent);}
+
+.grid{display:grid;gap:25px;}
+.activities-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+
+/* Scroll reveal */
+.animate{opacity:0;transform:translateY(32px);transition:opacity .75s ease,transform .75s ease;}
+.animate.show{opacity:1;transform:translateY(0);}
+
+/* Cards */
+.card,.member-card,.counter-box{background:var(--card-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--border);box-shadow:var(--shadow);transition:transform .35s,box-shadow .35s,opacity .75s;}
+.card{padding:32px 24px;border-radius:var(--radius);text-align:center;font-weight:600;color:var(--heading);}
+.card:hover,.card.animate.show:hover,.member-card:hover,.member-card.animate.show:hover,.counter-box:hover,.counter-box.animate.show:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);}
+.card i{width:68px;height:68px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:28px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--secondary));margin-bottom:16px;transition:transform .35s;}
+.card:hover i{transform:scale(1.1) rotate(-6deg);}
+.card h3{font-size:1.18rem;font-weight:600;color:var(--heading);}
+.card .card-desc{font-size:.92rem;font-weight:400;color:var(--text);margin-top:8px;opacity:.88;}
+
+/* =========================================================
+   EVENTS & ANNOUNCEMENTS SECTION
+========================================================= */
+.tabs-bar{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+.tab-btn{padding:13px 28px;border-radius:999px;border:1.5px solid var(--border);background:var(--card-bg);color:var(--heading);font-weight:600;font-size:1rem;cursor:pointer;display:inline-flex;align-items:center;gap:10px;transition:all .3s;box-shadow:var(--shadow);}
+.tab-btn:hover{border-color:var(--primary);transform:translateY(-2px);}
+.tab-btn.active{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-color:transparent;box-shadow:0 12px 26px rgba(15,118,110,.3);}
+
+.ea-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;}
+.ea-card{padding:28px;border-radius:var(--radius);display:flex;flex-direction:column;justify-content:space-between;gap:16px;transition:transform .35s,box-shadow .35s;position:relative;overflow:hidden;}
+.ea-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--accent));}
+.ea-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.ea-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+.ea-icon{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:#fff;background:linear-gradient(135deg,var(--primary),var(--secondary));flex-shrink:0;}
+.ea-card h3{font-size:1.22rem;font-weight:700;color:var(--heading);margin-bottom:6px;}
+.ea-card p{font-size:.96rem;color:var(--text);opacity:.9;}
+.ea-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:.88rem;color:var(--accent-text);font-weight:600;padding-top:12px;border-top:1px solid var(--border);}
+.ea-meta span{display:inline-flex;align-items:center;gap:6px;}
+
+.badge{display:inline-flex;align-items:center;padding:4px 12px;border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;}
+.badge-new{background:rgba(16,185,129,.16);color:#047857;border:1px solid rgba(16,185,129,.35);}
+.badge-important{background:rgba(239,68,68,.15);color:#B91C1C;border:1px solid rgba(239,68,68,.35);}
+.badge-upcoming{background:rgba(37,99,235,.15);color:#1D4ED8;border:1px solid rgba(37,99,235,.35);}
+.dark-mode .badge-new{color:#34D399;}
+.dark-mode .badge-important{color:#F87171;}
+.dark-mode .badge-upcoming{color:#60A5FA;}
+
+/* =========================================================
+   FESTIVAL & HOLIDAY CALENDAR SECTION
+========================================================= */
+.cal-controls-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px;padding:20px 24px;border-radius:var(--radius);}
+.cal-filters{display:flex;flex-wrap:wrap;gap:8px;}
+.cal-filter-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--border);background:var(--input-bg);color:var(--text);font-size:.88rem;font-weight:600;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:6px;}
+.cal-filter-btn:hover{border-color:var(--primary);}
+.cal-filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+
+.cal-year-switch{display:flex;align-items:center;gap:8px;}
+.year-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--border);background:var(--input-bg);color:var(--heading);font-weight:700;font-size:.88rem;cursor:pointer;transition:.25s;}
+.year-btn.active{background:var(--secondary);color:#fff;border-color:var(--secondary);}
+
+.cal-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-bottom:28px;font-size:.92rem;font-weight:600;}
+.legend-item{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:var(--card-bg);border:1px solid var(--border);}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.dot-festival{background:var(--cat-festival);}
+.dot-national{background:var(--cat-national);}
+.dot-club{background:var(--cat-club);}
+.dot-meeting{background:var(--cat-meeting);}
+
+.cal-layout{display:grid;grid-template-columns:1.65fr 1fr;gap:26px;align-items:start;}
+.cal-main{padding:26px;border-radius:var(--radius);position:relative;}
+.cal-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;}
+.cal-month-title{font-size:1.55rem;font-weight:800;color:var(--heading);}
+.cal-nav{display:flex;gap:8px;align-items:center;}
+.cal-nav-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--input-bg);color:var(--heading);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:.25s;}
+.cal-nav-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
+.cal-today-btn{padding:8px 14px;border-radius:999px;border:1px solid var(--primary);background:transparent;color:var(--accent-text);font-weight:600;font-size:.84rem;cursor:pointer;transition:.25s;}
+.cal-today-btn:hover{background:var(--primary);color:#fff;}
+
+.cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:8px;text-align:center;font-weight:700;font-size:.82rem;color:var(--accent-text);text-transform:uppercase;}
+.cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+.cal-day{min-height:76px;padding:8px 6px;border-radius:14px;border:1px solid var(--border);background:var(--input-bg);display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s;position:relative;}
+.cal-day:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08);}
+.cal-day.empty{background:transparent;border-color:transparent;cursor:default;pointer-events:none;}
+.cal-day.today{border:2px solid var(--accent);background:rgba(245,158,11,.12);box-shadow:0 0 0 3px rgba(245,158,11,.18);}
+.cal-day-num{font-weight:700;font-size:.92rem;color:var(--heading);display:flex;justify-content:space-between;align-items:center;}
+.today-tag{font-size:.62rem;background:var(--accent);color:var(--dark);padding:1px 6px;border-radius:999px;font-weight:800;}
+.cal-day-dots{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;}
+.cal-event-pill{font-size:.68rem;line-height:1.2;padding:2px 5px;border-radius:6px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.pill-festival{background:var(--cat-festival-bg);color:#DC2626;}
+.pill-national{background:var(--cat-national-bg);color:#059669;}
+.pill-club{background:var(--cat-club-bg);color:#2563EB;}
+.pill-meeting{background:var(--cat-meeting-bg);color:#EA580C;}
+.dark-mode .pill-festival{color:#FCA5A5;}
+.dark-mode .pill-national{color:#6EE7B7;}
+.dark-mode .pill-club{color:#93C5FD;}
+.dark-mode .pill-meeting{color:#FDBA74;}
+
+/* Event Popup inside Calendar */
+.cal-popup{margin-top:18px;padding:18px;border-radius:16px;border:1.5px solid var(--primary);background:var(--card-solid);box-shadow:var(--shadow-lg);display:none;animation:fadeUp .25s ease;}
+.cal-popup.open{display:block;}
+.cal-popup-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.cal-popup-head h4{color:var(--heading);font-size:1.05rem;}
+.cal-popup-close{background:none;border:none;font-size:1.2rem;color:var(--text);cursor:pointer;padding:4px 8px;}
+.cal-popup-list{display:flex;flex-direction:column;gap:10px;}
+.cal-popup-item{padding:12px;border-radius:12px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;transition:.2s;}
+.cal-popup-item:hover{border-color:var(--primary);background:rgba(15,118,110,.06);}
+
+/* Sidebars */
+.cal-sidebars{display:flex;flex-direction:column;gap:22px;}
+.sidebar-card{padding:22px;border-radius:var(--radius);}
+.sidebar-card h3{font-size:1.15rem;font-weight:700;color:var(--heading);margin-bottom:14px;display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.sidebar-list{display:flex;flex-direction:column;gap:10px;max-height:310px;overflow-y:auto;padding-right:4px;}
+.sidebar-item{padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--input-bg);display:flex;align-items:center;gap:12px;cursor:pointer;transition:.25s;text-align:left;width:100%;}
+.sidebar-item:hover{border-color:var(--primary);transform:translateX(4px);}
+.sidebar-emoji{font-size:1.35rem;flex-shrink:0;}
+.sidebar-info{min-width:0;flex:1;}
+.sidebar-title{font-weight:600;font-size:.93rem;color:var(--heading);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sidebar-date{font-size:.8rem;color:var(--accent-text);font-weight:500;}
+
+/* Event Details Modal */
+.modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.72);backdrop-filter:blur(6px);z-index:5000;display:none;align-items:center;justify-content:center;padding:20px;}
+.modal-backdrop.open{display:flex;}
+.modal-box{width:100%;max-width:520px;border-radius:24px;padding:30px;background:var(--card-solid);border:1px solid var(--border);box-shadow:var(--shadow-lg);position:relative;animation:fadeUp .28s ease;}
+.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:var(--input-bg);color:var(--heading);cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;}
+.modal-close:hover{background:var(--primary);color:#fff;}
+.modal-icon{font-size:2.5rem;margin-bottom:10px;}
+.modal-cat{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:999px;font-size:.8rem;font-weight:700;margin-bottom:12px;}
+.modal-box h3{font-size:1.5rem;font-weight:800;color:var(--heading);margin-bottom:8px;}
+.modal-date{font-weight:600;color:var(--accent-text);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.modal-desc{color:var(--text);font-size:1rem;line-height:1.7;margin-bottom:20px;}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+.g-item{overflow:hidden;border-radius:20px;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--border);}
+.gallery img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .6s ease;}
+.g-item:hover img{transform:scale(1.08);}
+
+/* Committee */
+.members{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+.member-card{border-radius:24px;overflow:hidden;text-align:center;padding-bottom:24px;}
+.member-card img{width:100%;height:300px;object-fit:cover;object-position:top;transition:transform .6s ease;}
+.member-card:hover img{transform:scale(1.05);}
+.member-placeholder-avatar{width:100%;height:300px;background:linear-gradient(135deg,rgba(15,118,110,.15),rgba(37,99,235,.15));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--accent-text);}
+.member-placeholder-avatar i{font-size:4.2rem;opacity:.65;}
+.member-card h3{margin-top:20px;font-size:1.35rem;font-weight:700;color:var(--heading);}
+.role{display:inline-block;margin:8px 0 12px;padding:4px 18px;border-radius:999px;background:rgba(245,158,11,.16);color:#B45309;font-weight:600;font-size:.9rem;}
+.dark-mode .role{color:#FBBF24;}
+.phone a{display:inline-block;padding:10px 16px;color:var(--accent-text);font-weight:600;text-decoration:none;}
+.phone a:hover{text-decoration:underline;}
+.placeholder-note{font-size:.88rem;opacity:.75;padding:6px 16px;}
+
+/* =========================================================
+   MEMBERSHIP SYSTEM
+========================================================= */
+.plans-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-bottom:48px;}
+.plan-card{padding:32px 24px;border-radius:24px;text-align:center;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s;}
+.plan-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--primary);}
+.plan-card.featured{border:2px solid var(--accent);}
+.plan-ribbon{position:absolute;top:14px;right:-32px;background:var(--accent);color:var(--dark);font-size:.72rem;font-weight:800;padding:4px 36px;transform:rotate(38deg);}
+.plan-card h3{font-size:1.3rem;font-weight:700;color:var(--heading);margin-bottom:10px;}
+.plan-price{font-size:2.1rem;font-weight:800;color:var(--accent-text);margin:10px 0 18px;line-height:1.2;}
+.plan-features{list-style:none;text-align:left;margin-bottom:24px;display:flex;flex-direction:column;gap:8px;font-size:.92rem;}
+.plan-features li{display:flex;align-items:center;gap:8px;}
+.plan-features li i{color:var(--primary);font-size:.9rem;}
+
+.benefits-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-bottom:48px;}
+.benefit-pill{padding:18px 16px;border-radius:16px;text-align:center;font-weight:600;color:var(--heading);display:flex;flex-direction:column;align-items:center;gap:10px;}
+.benefit-pill i{font-size:1.6rem;color:var(--accent-text);}
+
+.form-card{padding:36px;border-radius:24px;max-width:900px;margin:auto;}
+.form-card h3{font-size:1.6rem;font-weight:700;color:var(--heading);margin-bottom:8px;text-align:center;}
+.form-subtitle{text-align:center;opacity:.82;margin-bottom:26px;}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{display:flex;flex-direction:column;gap:6px;}
+.form-group.full{grid-column:1 / -1;}
+.form-group label{font-weight:600;font-size:.92rem;color:var(--heading);}
+.checkbox-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:10px;margin-top:4px;}
+.check-item{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:var(--input-bg);cursor:pointer;font-size:.92rem;font-weight:500;transition:.2s;}
+.check-item:hover{border-color:var(--primary);}
+.check-item input[type="checkbox"]{width:18px;height:18px;margin:0;accent-color:var(--primary);cursor:pointer;flex-shrink:0;}
+.declaration-box{display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:14px;background:rgba(15,118,110,.08);border:1px solid rgba(15,118,110,.25);cursor:pointer;}
+.declaration-box input[type="checkbox"]{width:20px;height:20px;margin:3px 0 0;accent-color:var(--primary);flex-shrink:0;}
+.form-status{margin-top:18px;padding:16px 20px;border-radius:14px;font-weight:600;display:none;text-align:center;}
+.form-status.success{display:block;background:rgba(16,185,129,.15);color:#047857;border:1px solid rgba(16,185,129,.4);}
+.form-status.error{display:block;background:rgba(239,68,68,.15);color:#B91C1C;border:1px solid rgba(239,68,68,.4);}
+.dark-mode .form-status.success{color:#34D399;}
+.dark-mode .form-status.error{color:#F87171;}
+
+/* =========================================================
+   DONATION SECTION
+========================================================= */
+.donation-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start;}
+.donation-box{padding:32px;border-radius:24px;}
+.donation-box h3{font-size:1.3rem;font-weight:700;color:var(--heading);margin-bottom:16px;}
+.chip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:24px;}
+.chip-btn{padding:12px 14px;border-radius:14px;border:1.5px solid var(--border);background:var(--input-bg);color:var(--heading);font-weight:600;font-size:.92rem;cursor:pointer;transition:.25s;text-align:center;}
+.chip-btn:hover{border-color:var(--primary);}
+.chip-btn.active{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 8px 18px rgba(15,118,110,.25);}
+
+.amount-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;}
+.donation-notice{padding:16px 20px;border-radius:14px;background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.35);color:var(--heading);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+.donation-notice i{color:var(--accent);font-size:1.3rem;flex-shrink:0;}
+
+.method-list{display:flex;flex-direction:column;gap:12px;}
+.method-row{padding:14px 16px;border-radius:14px;border:1px solid var(--border);background:var(--input-bg);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.method-label{font-size:.84rem;opacity:.75;font-weight:600;}
+.method-val{font-weight:700;color:var(--heading);font-size:.98rem;}
+.qr-placeholder{padding:24px;border-radius:16px;border:2px dashed var(--border);text-align:center;margin-top:16px;background:var(--input-bg);}
+.qr-placeholder i{font-size:4rem;color:var(--accent-text);opacity:.7;margin-bottom:8px;}
+
+/* =========================================================
+   ANNUAL REPORTS & TRANSPARENCY POLICY
+========================================================= */
+.reports-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-bottom:40px;}
+.report-card{padding:28px 22px;border-radius:20px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;text-align:center;transition:transform .3s,box-shadow .3s;}
+.report-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.report-icon{width:62px;height:62px;border-radius:18px;margin:0 auto;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;}
+.report-card h3{font-size:1.12rem;font-weight:700;color:var(--heading);}
+.report-status{font-size:.82rem;opacity:.78;}
+
+.transparency-box{padding:32px 36px;border-radius:22px;border-left:6px solid var(--primary);display:flex;align-items:flex-start;gap:20px;}
+.transparency-box i{font-size:2.2rem;color:var(--accent-text);flex-shrink:0;margin-top:4px;}
+.transparency-box h3{font-size:1.3rem;font-weight:700;color:var(--heading);margin-bottom:8px;}
+
+/* Counters */
+.counter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.counter-box{padding:32px;border-radius:var(--radius);text-align:center;}
+.counter{font-size:3.2rem;color:var(--accent-text);font-weight:800;line-height:1.2;}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+form.contact-form, .membership-form-el{background:var(--card-bg);backdrop-filter:blur(12px);padding:32px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);}
+input,textarea,select{width:100%;padding:14px 15px;margin:6px 0;border:1px solid var(--border);border-radius:12px;background:var(--input-bg);color:var(--text);font-size:1rem;transition:border-color .3s,box-shadow .3s;}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(15,118,110,.25);}
+form .btn{margin-top:10px;}
+.map{width:100%;min-width:0;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);}
+.map iframe{display:block;width:100%;max-width:100%;height:100%;min-height:420px;border:none;border-radius:20px;}
+.contact-info-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:34px;}
+.contact-pill{padding:20px;border-radius:18px;text-align:center;}
+.contact-pill i{font-size:1.5rem;color:var(--accent-text);margin-bottom:8px;}
+.contact-pill a{color:var(--accent-text);font-weight:600;text-decoration:none;}
+.contact-pill a:hover{text-decoration:underline;}
+.directions-wrap{margin-top:24px;text-align:center;}
+.directions-btn{max-width:100%;text-align:center;}
+
+/* Footer */
+footer{position:relative;background:var(--dark);color:#CBD5E1;padding:72px 0 28px;}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1.3fr 1fr;gap:40px;text-align:left;}
+footer h3{color:#fff;font-size:1.35rem;font-weight:700;margin:14px 0 8px;}
+footer h4{color:#fff;font-size:1.05rem;font-weight:600;margin-bottom:16px;}
+footer a{color:#CBD5E1;text-decoration:none;transition:color .3s;}
+footer a:hover{color:var(--accent);}
+.footer-col p,.footer-col .fl{display:block;margin-bottom:10px;}
+.footer-col p i{width:24px;color:var(--accent);}
+.footer-col .fl{padding:2px 0;}
+.socials{display:flex;gap:12px;margin-top:18px;}
+.socials a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;transition:background .3s,transform .3s,color .3s;}
+.socials a:hover{background:var(--accent);color:var(--dark);transform:translateY(-4px);}
+.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;text-align:center;font-size:.9rem;opacity:.8;}
+
+.whatsapp{position:fixed;right:20px;bottom:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;justify-content:center;align-items:center;color:white;font-size:30px;z-index:999;box-shadow:0 10px 25px rgba(0,0,0,.3);transition:transform .3s;}
+.whatsapp:hover{transform:scale(1.1);}
+.top-btn{position:fixed;bottom:90px;right:20px;width:50px;height:50px;background:var(--secondary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:998;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .3s;}
+.top-btn:hover{transform:translateY(-4px);}
+
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;justify-content:center;align-items:center;z-index:9999;}
+.lightbox img{width:90%;max-width:900px;max-height:90vh;object-fit:contain;border-radius:12px;}
+
+@media(prefers-reduced-motion:reduce){
+*{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+.animate{opacity:1;transform:none;}
+}
+
+@media(max-width:1240px){
+.nav-links a{padding:7px 8px;font-size:.82rem;}
+.logo{font-size:.9rem;}
+}
+
+/* Mobile / Tablet navigation */
+@media(max-width:1080px){
+.menu-btn{display:block;}
+.nav-links{position:absolute;top:100%;left:0;width:100%;flex-direction:column;gap:4px;padding:16px 5% 24px;background:rgba(15,23,42,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .3s,transform .3s,visibility .3s;max-height:80vh;overflow-y:auto;}
+.nav-links.active{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-links a{display:block;min-height:46px;padding:12px 16px;font-size:1rem;text-align:center;}
+}
+
+@media(max-width:1024px){
+.hero h1{font-size:66px;}
+.cal-layout{grid-template-columns:1fr;}
+.donation-layout{grid-template-columns:1fr;}
+.footer-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:768px){
+section{padding:64px 0;}
+.hero{padding:110px 0 64px;}
+.hero h1{font-size:42px;}
+.hero p{font-size:1.1rem;}
+.hero-buttons .btn{width:100%;max-width:340px;}
+.section-title{margin-bottom:36px;}
+.section-title h2{font-size:30px;}
+.about-card{padding:26px;font-size:1rem;}
+.form-grid{grid-template-columns:1fr;}
+.form-card{padding:24px 18px;}
+.contact-grid{grid-template-columns:1fr;}
+.map iframe{min-height:320px;}
+.directions-btn{display:flex;width:100%;max-width:340px;margin-left:auto;margin-right:auto;}
+.cal-main{padding:16px 12px;}
+.cal-day{min-height:60px;padding:5px 4px;border-radius:10px;}
+.cal-event-pill{font-size:.6rem;padding:1px 3px;}
+.amount-grid{grid-template-columns:repeat(2,1fr);}
+.transparency-box{flex-direction:column;padding:24px;}
+.nav-controls{gap:2px;}
+.lang-toggle{padding:6px 11px;font-size:.78rem;}
+.logo{font-size:.86rem;max-width:56%;}
+.logo-img{width:38px;height:38px;}
+.footer-grid{grid-template-columns:1fr;text-align:center;gap:32px;}
+.socials{justify-content:center;}
+.whatsapp{width:56px;height:56px;}
+}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"2 No. Khudirabad Srijuni Park Club","logo":"https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg","email":"khudirabadsrijuniparkclub@gmail.com","telephone":"+918910781182","address":{"@type":"PostalAddress","streetAddress":"Srijani Park Rd","addressLocality":"Bhagabanpur","addressRegion":"West Bengal","addressCountry":"IN"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-bn="মূল বিষয়বস্তুতে যান">Skip to main content</a>
+
+<header>
+<nav aria-label="Main navigation">
+<div class="logo">
+<img class="logo-img" src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg" alt="Club Logo">
+<span data-bn="২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</span>
+</div>
+
+<div class="nav-links" id="navLinks">
+<a href="#about" data-bn="পরিচিতি">About</a>
+<a href="#events" data-bn="অনুষ্ঠান ও বিজ্ঞপ্তি">Events</a>
+<a href="#calendar" data-bn="ক্যালেন্ডার">Calendar</a>
+<a href="#gallery" data-bn="গ্যালারি">Gallery</a>
+<a href="#members" data-bn="কমিটি">Committee</a>
+<a href="#membership" data-bn="সদস্যপদ">Membership</a>
+<a href="#donation" data-bn="সহযোগিতা">Donate</a>
+<a href="#reports" data-bn="প্রতিবেদন">Reports</a>
+<a href="#contact" data-bn="যোগাযোগ">Contact</a>
+</div>
+
+<div class="nav-controls">
+<button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">বাংলা</button>
+<i class="fas fa-moon dark-toggle" id="darkMode" role="button" tabindex="0" aria-label="Toggle light and dark mode" title="Switch to dark mode"></i>
+<i class="fas fa-bars menu-btn" id="menuBtn" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"></i>
+</div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+<div class="container hero-content">
+<h1 data-bn="২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</h1>
+<p data-bn="ঐক্য • সংস্কৃতি • সমাজসেবা">Unity • Culture • Community Service</p>
+<div class="hero-buttons">
+<a href="#membership" class="btn btn-primary" data-bn="সদস্য হোন">Become a Member</a>
+<a href="#events" class="btn btn-secondary" data-bn="অনুষ্ঠান ও বিজ্ঞপ্তি">Events &amp; Announcements</a>
+<a href="#calendar" class="btn btn-accent" data-bn="উৎসব ক্যালেন্ডার">Festival Calendar</a>
+</div>
+</div>
+</section>
+
+<!-- ================= CLUB AT A GLANCE ================= -->
+<section id="glance">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="এক নজরে ক্লাব">Club At A Glance</h2>
+<p data-bn="আমাদের পাড়ার সামাজিক, সাংস্কৃতিক ও ক্রীড়া উন্নয়নের মূল স্তম্ভসমূহ">Core pillars of our neighborhood's social, cultural, and community development</p>
+</div>
+
+<div class="grid activities-grid">
+<div class="card animate">
+<i class="fas fa-people-roof" aria-hidden="true"></i>
+<h3 data-bn="কমিউনিটি সেন্টার">Community Center</h3>
+<p class="card-desc" data-bn="সকল প্রজন্মের বাসিন্দাদের মিলনস্থল ও সামাজিক উদ্যোগের কেন্দ্র">A welcoming hub for residents of all generations and neighborhood initiatives</p>
+</div>
+
+<div class="card animate">
+<i class="fas fa-masks-theater" aria-hidden="true"></i>
+<h3 data-bn="সাংস্কৃতিক কার্যক্রম">Cultural Activities</h3>
+<p class="card-desc" data-bn="রবীন্দ্র জয়ন্তী, নাটক, সংগীত ও স্থানীয় শিল্পীদের মঞ্চ">Celebrating heritage through music, dance, drama, and literary evenings</p>
+</div>
+
+<div class="card animate">
+<i class="fas fa-futbol" aria-hidden="true"></i>
+<h3 data-bn="ক্রীড়া কর্মসূচি">Sports Programs</h3>
+<p class="card-desc" data-bn="যুবসমাজের জন্য বার্ষিক ফুটবল, ক্রিকেট ও ক্রীড়া প্রতিযোগিতা">Annual football, cricket, and athletic tournaments for youth empowerment</p>
+</div>
+
+<div class="card animate">
+<i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+<h3 data-bn="সমাজকল্যাণমূলক কার্যক্রম">Social Welfare Activities</h3>
+<p class="card-desc" data-bn="বস্ত্র বিতরণ, শিক্ষা সহায়তা ও জরুরি জনসেবা">Clothing drives, educational support, and emergency community assistance</p>
+</div>
+
+<div class="card animate">
+<i class="fas fa-champagne-glasses" aria-hidden="true"></i>
+<h3 data-bn="উৎসব উদযাপন">Festival Celebrations</h3>
+<p class="card-desc" data-bn="দুর্গাপূজা, সরস্বতী পূজা, কালীপূজা ও পহেলা বৈশাখ উদযাপন">Joyous celebrations of Durga Puja, Saraswati Puja, and Bengali traditions</p>
+</div>
+
+<div class="card animate">
+<i class="fas fa-droplet" aria-hidden="true"></i>
+<h3 data-bn="রক্তদান শিবির">Blood Donation Camps</h3>
+<p class="card-desc" data-bn="নিয়মিত স্বেচ্ছা রক্তদান শিবির ও স্বাস্থ্য সচেতনতা অভিযান">Regular voluntary blood donation camps and community health drives</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT CLUB ================= -->
+<section id="about">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="ক্লাব সম্পর্কে">About Club</h2>
+</div>
+
+<div class="about-card glass animate">
+<p data-bn="২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাবে আপনাকে স্বাগতম। ক্লাবটি পশ্চিমবঙ্গের ভগবানপুরের সৃজনী পার্ক রোডে অবস্থিত। আমাদের ক্লাব সম্প্রদায়ের ঐক্য, সাংস্কৃতিক ঐতিহ্য, ক্রীড়া কার্যক্রম, সামাজিক কল্যাণমূলক কর্মসূচি, রক্তদান শিবির এবং উৎসব উদযাপনকে এগিয়ে নিতে নিবেদিত। আমরা সকল প্রজন্মের জন্য এলাকার বাসিন্দাদের একত্রিত করে একটি শক্তিশালী ও প্রাণবন্ত সমাজ গড়ে তুলতে সচেষ্ট।">
+Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bhagabanpur, West Bengal. Our club is dedicated to promoting community unity, cultural heritage, sports activities, social welfare programs, blood donation camps, and festive celebrations. We strive to bring residents together and create a stronger, more vibrant community for all generations.
+</p>
+</div>
+</div>
+</section>
+
+<!-- ================= EVENTS & ANNOUNCEMENTS ================= -->
+<section id="events">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="অনুষ্ঠান ও বিজ্ঞপ্তি">Events &amp; Announcements</h2>
+<p data-bn="ক্লাবের আসন্ন অনুষ্ঠান এবং গুরুত্বপূর্ণ নোটিশ সম্পর্কে সর্বশেষ তথ্য জানুন">Stay updated with our upcoming community programs and official club notices</p>
+</div>
+
+<div class="tabs-bar animate" role="tablist" aria-label="Events and Announcements Tabs">
+<button type="button" class="tab-btn active" id="tabEventsBtn" role="tab" aria-selected="true" onclick="switchEATab('events')">
+<span>📅</span>
+<span data-bn="আসন্ন অনুষ্ঠান">Upcoming Events</span>
+</button>
+<button type="button" class="tab-btn" id="tabAnnouncementsBtn" role="tab" aria-selected="false" onclick="switchEATab('announcements')">
+<span>📢</span>
+<span data-bn="বিজ্ঞপ্তিসমূহ">Announcements</span>
+</button>
+</div>
+
+<div class="ea-grid" id="eaContainer" role="tabpanel">
+<!-- Dynamically populated by JavaScript for seamless EN/BN support -->
+</div>
+</div>
+</section>
+
+<!-- ================= FESTIVAL & HOLIDAY CALENDAR ================= -->
+<section id="calendar">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="উৎসব ও ছুটির ক্যালেন্ডার">Festival &amp; Holiday Calendar</h2>
+<p data-bn="২০২৬ এবং ২০২৭ সালের বাঙালি উৎসব, জাতীয় ছুটি, ক্লাব অনুষ্ঠান ও সভার পূর্ণাঙ্গ ক্যালেন্ডার">Interactive 2026 &amp; 2027 calendar for Bengali festivals, national holidays, club events, and meetings</p>
+</div>
+
+<!-- Color Legend -->
+<div class="cal-legend animate">
+<span class="legend-item"><span class="dot dot-festival"></span><span data-bn="বাঙালি উৎসব">Bengali Festivals</span></span>
+<span class="legend-item"><span class="dot dot-national"></span><span data-bn="জাতীয় ছুটি">National Holidays</span></span>
+<span class="legend-item"><span class="dot dot-club"></span><span data-bn="ক্লাব অনুষ্ঠান">Club Events</span></span>
+<span class="legend-item"><span class="dot dot-meeting"></span><span data-bn="সভা ও বিজ্ঞপ্তি">Meetings &amp; Notices</span></span>
+</div>
+
+<!-- Filter & Year Controls -->
+<div class="cal-controls-bar glass animate">
+<div class="cal-filters" role="group" aria-label="Calendar Category Filters">
+<button type="button" class="cal-filter-btn active" data-filter="all" data-bn="সব">All</button>
+<button type="button" class="cal-filter-btn" data-filter="festival"><span class="dot dot-festival"></span><span data-bn="উৎসব">Festivals</span></button>
+<button type="button" class="cal-filter-btn" data-filter="national"><span class="dot dot-national"></span><span data-bn="জাতীয় ছুটি">National Holidays</span></button>
+<button type="button" class="cal-filter-btn" data-filter="club"><span class="dot dot-club"></span><span data-bn="ক্লাব অনুষ্ঠান">Club Events</span></button>
+<button type="button" class="cal-filter-btn" data-filter="meeting"><span class="dot dot-meeting"></span><span data-bn="সভা">Meetings</span></button>
+</div>
+
+<div class="cal-year-switch">
+<button type="button" class="year-btn" id="year2026Btn" onclick="jumpToYear(2026)">2026</button>
+<button type="button" class="year-btn" id="year2027Btn" onclick="jumpToYear(2027)">2027</button>
+</div>
+</div>
+
+<!-- Calendar + Sidebars Grid -->
+<div class="cal-layout">
+<!-- Main Calendar View -->
+<div class="cal-main glass animate">
+<div class="cal-header">
+<div class="cal-month-title" id="calMonthTitle">November 2026</div>
+<div class="cal-nav">
+<button type="button" class="cal-today-btn" id="calTodayBtn" data-bn="আজ">Today</button>
+<button type="button" class="cal-nav-btn" id="calPrevBtn" aria-label="Previous month"><i class="fas fa-chevron-left"></i></button>
+<button type="button" class="cal-nav-btn" id="calNextBtn" aria-label="Next month"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
+
+<div class="cal-weekdays" id="calWeekdays"></div>
+<div class="cal-days" id="calDays"></div>
+
+<!-- Event Popup (on date click) -->
+<div class="cal-popup" id="calPopup" role="region" aria-live="polite">
+<div class="cal-popup-head">
+<h4 id="calPopupDateTitle"></h4>
+<button type="button" class="cal-popup-close" id="calPopupClose" aria-label="Close popup"><i class="fas fa-times"></i></button>
+</div>
+<div class="cal-popup-list" id="calPopupList"></div>
+</div>
+</div>
+
+<!-- Sidebars -->
+<div class="cal-sidebars">
+<!-- Upcoming Events Sidebar -->
+<div class="sidebar-card glass animate">
+<h3><i class="fas fa-calendar-check" aria-hidden="true"></i> <span data-bn="আসন্ন অনুষ্ঠান ও ছুটি">Upcoming Events</span></h3>
+<div class="sidebar-list" id="upcomingSidebarList"></div>
+</div>
+
+<!-- Festival Sidebar -->
+<div class="sidebar-card glass animate">
+<h3><i class="fas fa-dharmachakra" aria-hidden="true"></i> <span id="festivalSidebarHeading" data-bn="উৎসব তালিকা">Festivals</span></h3>
+<div class="sidebar-list" id="festivalSidebarList"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="গ্যালারি">Gallery</h2>
+</div>
+
+<div class="gallery">
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-9f1b7b4fcb8d?w=800" alt="Community gathering at the club"></div>
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800" alt="Festival celebration"></div>
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800" alt="Cultural event"></div>
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" alt="Club members together"></div>
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1505238680356-667803448bb6?w=800" alt="Evening celebration"></div>
+<div class="g-item"><img loading="lazy" src="https://images.unsplash.com/photo-1469571486292-b53601020f1f?w=800" alt="Community programme"></div>
+</div>
+</div>
+</section>
+
+<!-- ================= COMMITTEE MEMBERS ================= -->
+<section id="members">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="কমিটির সদস্যবৃন্দ">Committee Members</h2>
+<p data-bn="ক্লাবের পরিচালন সমিতির দায়িত্বশীল সদস্যবৃন্দ">Dedicated leaders guiding our community initiatives</p>
+</div>
+
+<div class="members">
+<div class="member-card animate">
+<img src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/Koushik.jpg" alt="Koushik Roy">
+<h3 data-bn="কৌশিক রায়">Koushik Roy</h3>
+<p class="role" data-bn="সভাপতি">President</p>
+<p class="phone"><a href="tel:+918910781182">📞 +91 89107 81182</a></p>
+</div>
+
+<div class="member-card animate">
+<img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Dipak Singh">
+<h3 data-bn="দীপক সিং">Dipak Singh</h3>
+<p class="role" data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
+<p class="phone"><a href="tel:+918981395629">📞 +91 89813 95629</a></p>
+</div>
+
+<div class="member-card animate">
+<img src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/Kayal.jpg" alt="Dushmanta Kayal">
+<h3 data-bn="দুশ্মন্ত কয়াল">Dushmanta Kayal</h3>
+<p class="role" data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
+<p class="phone"><a href="tel:+919163661186">📞 +91 91636 61186</a></p>
+</div>
+
+<!-- Future Committee Member Placeholders (Easy to replace with real photo, name & phone) -->
+<div class="member-card animate">
+<div class="member-placeholder-avatar">
+<i class="fas fa-user-tie" aria-hidden="true"></i>
+</div>
+<h3 data-bn="ভবিষ্যৎ সদস্য (খালি পদ)">Future Member</h3>
+<p class="role" data-bn="সহ-সভাপতি / সম্পাদক">Vice President / Secretary</p>
+<p class="placeholder-note" data-bn="পরবর্তী কমিটি ঘোষণায় নাম ও ছবি যুক্ত করা হবে">Details to be updated by the club</p>
+</div>
+
+<div class="member-card animate">
+<div class="member-placeholder-avatar">
+<i class="fas fa-user-shield" aria-hidden="true"></i>
+</div>
+<h3 data-bn="ভবিষ্যৎ সদস্য (খালি পদ)">Future Member</h3>
+<p class="role" data-bn="কোষাধ্যক্ষ / কার্যনির্বাহী সদস্য">Treasurer / Executive Member</p>
+<p class="placeholder-note" data-bn="পরবর্তী কমিটি ঘোষণায় নাম ও ছবি যুক্ত করা হবে">Details to be updated by the club</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= MEMBERSHIP SYSTEM ================= -->
+<section id="membership">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="সদস্য হোন">Become a Member</h2>
+<p data-bn="আমাদের পরিবারে যোগ দিন এবং পাড়ার সামাজিক, সাংস্কৃতিক ও ক্রীড়া উন্নয়নে অংশীদার হোন">Join our community family and contribute to neighborhood culture, sports, and social welfare</p>
+</div>
+
+<!-- Membership Plans -->
+<div class="plans-grid">
+<div class="plan-card glass animate">
+<div>
+<h3 data-bn="যুব সদস্য">Youth Member</h3>
+<div class="plan-price" data-bn="₹৫০/মাস">₹50/month</div>
+<ul class="plan-features">
+<li><i class="fas fa-check-circle"></i><span data-bn="ক্রীড়া কার্যক্রম">Sports Activities</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="সাংস্কৃতিক অনুষ্ঠান">Cultural Programs</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="সমাজসেবা">Community Service</span></li>
+</ul>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="selectMembershipPlan('Youth Member (₹50/month)')" data-bn="এই পরিকল্পনা নির্বাচন করুন">Select Plan</button>
+</div>
+
+<div class="plan-card glass featured animate">
+<span class="plan-ribbon" data-bn="জনপ্রিয়">POPULAR</span>
+<div>
+<h3 data-bn="সাধারণ সদস্য">General Member</h3>
+<div class="plan-price" data-bn="₹১০০/মাস">₹100/month</div>
+<ul class="plan-features">
+<li><i class="fas fa-check-circle"></i><span data-bn="সকল ক্রীড়া ও সাংস্কৃতিক কার্যক্রম">Sports &amp; Cultural Programs</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="উৎসবে অংশগ্রহণ">Festival Participation</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="সাধারণ সভায় অংশগ্রহণ">General Body Meetings</span></li>
+</ul>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="selectMembershipPlan('General Member (₹100/month)')" data-bn="এই পরিকল্পনা নির্বাচন করুন">Select Plan</button>
+</div>
+
+<div class="plan-card glass animate">
+<div>
+<h3 data-bn="সহযোগী সদস্য">Supporting Member</h3>
+<div class="plan-price" data-bn="₹২০০/মাস">₹200/month</div>
+<ul class="plan-features">
+<li><i class="fas fa-check-circle"></i><span data-bn="সমাজকল্যাণমূলক প্রকল্পে সহায়তা">Welfare &amp; Blood Camp Support</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="উৎসব কমিটি ও পরিকল্পনা">Festival Planning Access</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="নেতৃত্বের সুযোগ">Leadership Opportunities</span></li>
+</ul>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="selectMembershipPlan('Supporting Member (₹200/month)')" data-bn="এই পরিকল্পনা নির্বাচন করুন">Select Plan</button>
+</div>
+
+<div class="plan-card glass animate">
+<div>
+<h3 data-bn="আজীবন সদস্য">Life Member</h3>
+<div class="plan-price" data-bn="₹২০০০ এককালীন">₹2000 One Time</div>
+<ul class="plan-features">
+<li><i class="fas fa-check-circle"></i><span data-bn="আজীবন সদস্যপদ ও বিশেষ সম্মাননা">Lifetime Club Membership</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="সকল উৎসব ও অনুষ্ঠানে অগ্রাধিকার">Priority Festival Participation</span></li>
+<li><i class="fas fa-check-circle"></i><span data-bn="ক্লাবের উন্নয়নে নেতৃত্ব">Permanent Leadership Voice</span></li>
+</ul>
+</div>
+<button type="button" class="btn btn-secondary btn-sm" onclick="selectMembershipPlan('Life Member (₹2000 One Time)')" data-bn="এই পরিকল্পনা নির্বাচন করুন">Select Plan</button>
+</div>
+</div>
+
+<!-- Membership Benefits -->
+<div class="benefits-strip animate">
+<div class="benefit-pill glass">
+<i class="fas fa-futbol" aria-hidden="true"></i>
+<span data-bn="ক্রীড়া কার্যক্রম">Sports Activities</span>
+</div>
+<div class="benefit-pill glass">
+<i class="fas fa-music" aria-hidden="true"></i>
+<span data-bn="সাংস্কৃতিক অনুষ্ঠান">Cultural Programs</span>
+</div>
+<div class="benefit-pill glass">
+<i class="fas fa-hands-helping" aria-hidden="true"></i>
+<span data-bn="সমাজসেবা">Community Service</span>
+</div>
+<div class="benefit-pill glass">
+<i class="fas fa-gopuram" aria-hidden="true"></i>
+<span data-bn="উৎসবে অংশগ্রহণ">Festival Participation</span>
+</div>
+<div class="benefit-pill glass">
+<i class="fas fa-award" aria-hidden="true"></i>
+<span data-bn="নেতৃত্বের সুযোগ">Leadership Opportunities</span>
+</div>
+</div>
+
+<!-- Membership Application Form (FormSubmit) -->
+<div class="form-card glass animate" id="membershipFormWrapper">
+<h3 data-bn="সদস্যপদ আবেদন ফর্ম">Membership Application Form</h3>
+<p class="form-subtitle" data-bn="আবেদনটি সরাসরি ক্লাবের অফিসিয়াল ইমেইলে পাঠানো হবে">Applications are submitted directly to the club committee</p>
+
+<form id="membershipForm" action="https://formsubmit.co/khudirabadsrijuniparkclub@gmail.com" method="POST">
+<!-- FormSubmit Configuration -->
+<input type="hidden" name="_subject" value="New Membership Application - 2 No. Khudirabad Srijuni Park Club">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+
+<div class="form-grid">
+<div class="form-group">
+<label for="mFullName" data-bn="সম্পূর্ণ নাম *">Full Name *</label>
+<input type="text" id="mFullName" name="Full Name" required placeholder="Enter full name" data-bn-placeholder="আপনার সম্পূর্ণ নাম লিখুন">
+</div>
+
+<div class="form-group">
+<label for="mGuardian" data-bn="পিতা / অভিভাবকের নাম *">Father / Guardian Name *</label>
+<input type="text" id="mGuardian" name="Father or Guardian Name" required placeholder="Enter father / guardian name" data-bn-placeholder="পিতা / অভিভাবকের নাম লিখুন">
+</div>
+
+<div class="form-group">
+<label for="mDob" data-bn="জন্ম তারিখ *">Date of Birth *</label>
+<input type="date" id="mDob" name="Date of Birth" required>
+</div>
+
+<div class="form-group">
+<label for="mOccupation" data-bn="পেশা *">Occupation *</label>
+<input type="text" id="mOccupation" name="Occupation" required placeholder="Student, Business, Service, etc." data-bn-placeholder="ছাত্র, ব্যবসা, চাকরি ইত্যাদি">
+</div>
+
+<div class="form-group">
+<label for="mMobile" data-bn="মোবাইল নম্বর *">Mobile Number *</label>
+<input type="tel" id="mMobile" name="Mobile Number" required placeholder="+91 98XXXXXXXX" data-bn-placeholder="+৯১ ৯৮XXXXXXXX">
+</div>
+
+<div class="form-group">
+<label for="mWhatsapp" data-bn="হোয়াটসঅ্যাপ নম্বর">WhatsApp Number</label>
+<input type="tel" id="mWhatsapp" name="WhatsApp Number" placeholder="+91 98XXXXXXXX" data-bn-placeholder="+৯১ ৯৮XXXXXXXX">
+</div>
+
+<div class="form-group">
+<label for="mEmail" data-bn="ইমেইল *">Email *</label>
+<input type="email" id="mEmail" name="Email" required placeholder="you@example.com" data-bn-placeholder="আপনার ইমেইল ঠিকানা">
+</div>
+
+<div class="form-group">
+<label for="mType" data-bn="সদস্যপদের ধরন *">Membership Type *</label>
+<select id="mType" name="Membership Type" required>
+<option value="Youth Member (₹50/month)" data-bn="যুব সদস্য (₹৫০/মাস)">Youth Member (₹50/month)</option>
+<option value="General Member (₹100/month)" selected data-bn="সাধারণ সদস্য (₹১০০/মাস)">General Member (₹100/month)</option>
+<option value="Supporting Member (₹200/month)" data-bn="সহযোগী সদস্য (₹২০০/মাস)">Supporting Member (₹200/month)</option>
+<option value="Life Member (₹2000 One Time)" data-bn="আজীবন সদস্য (₹২০০০ এককালীন)">Life Member (₹2000 One Time)</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label for="mAddress" data-bn="সম্পূর্ণ ঠিকানা *">Address *</label>
+<textarea id="mAddress" name="Address" rows="2" required placeholder="House No., Para / Street, Bhagabanpur, West Bengal" data-bn-placeholder="বাড়ি নং, পাড়া / রাস্তা, ভগবানপুর, পশ্চিমবঙ্গ"></textarea>
+</div>
+
+<div class="form-group full">
+<label data-bn="আগ্রহের ক্ষেত্রসমূহ">Areas of Interest</label>
+<div class="checkbox-grid">
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Sports"> <span data-bn="ক্রীড়া">Sports</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Cultural Activities"> <span data-bn="সাংস্কৃতিক কার্যক্রম">Cultural Activities</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Social Service"> <span data-bn="সমাজসেবা">Social Service</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Blood Donation Camp"> <span data-bn="রক্তদান শিবির">Blood Donation Camp</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Festival Committee"> <span data-bn="উৎসব কমিটি">Festival Committee</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Photography"> <span data-bn="ফটোগ্রাফি">Photography</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Decoration Team"> <span data-bn="সাজসজ্জা দল">Decoration Team</span></label>
+<label class="check-item"><input type="checkbox" name="Interests[]" value="Volunteer Work"> <span data-bn="স্বেচ্ছাসেবী কাজ">Volunteer Work</span></label>
+</div>
+</div>
+
+<div class="form-group full">
+<label class="declaration-box">
+<input type="checkbox" id="mDeclaration" name="Declaration" value="Agreed" required>
+<span data-bn="আমি ঘোষণা করছি যে প্রদত্ত সমস্ত তথ্য সঠিক এবং আমি ২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাবের নিয়মাবলী ও শৃঙ্খলা মেনে চলতে সম্মত।">I hereby declare that all information provided above is true and I agree to abide by the rules, values, and discipline of 2 No. Khudirabad Srijuni Park Club.</span>
+</label>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:22px;">
+<button type="submit" class="btn btn-primary" id="membershipSubmitBtn" data-bn="আবেদন জমা দিন">Submit Membership Application</button>
+</div>
+
+<div class="form-status" id="membershipStatus" role="status" aria-live="polite"></div>
+</form>
+</div>
+</div>
+</section>
+
+<!-- ================= DONATION SECTION ================= -->
+<section id="donation">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="আমাদের ক্লাবকে সহযোগিতা করুন">Support Our Club</h2>
+<p data-bn="আপনার স্বেচ্ছা অনুদান আমাদের সমাজকল্যাণ, ক্রীড়া, রক্তদান শিবির ও সাংস্কৃতিক উৎসবকে এগিয়ে নিতে সাহায্য করে">Your generous contribution empowers our social welfare drives, sports programs, blood camps, and festivals</p>
+</div>
+
+<div class="donation-layout">
+<!-- Category & Amount Picker -->
+<div class="donation-box glass animate">
+<h3 data-bn="১. অনুদানের খাত নির্বাচন করুন">1. Select Donation Category</h3>
+<div class="chip-grid" id="donationCategories">
+<button type="button" class="chip-btn active" data-cat="General Donation" data-bn="সাধারণ অনুদান">General Donation</button>
+<button type="button" class="chip-btn" data-cat="Durga Puja Fund" data-bn="দুর্গাপূজা তহবিল">Durga Puja Fund</button>
+<button type="button" class="chip-btn" data-cat="Festival Fund" data-bn="উৎসব তহবিল">Festival Fund</button>
+<button type="button" class="chip-btn" data-cat="Sports Fund" data-bn="ক্রীড়া তহবিল">Sports Fund</button>
+<button type="button" class="chip-btn" data-cat="Welfare Fund" data-bn="কল্যাণ তহবিল">Welfare Fund</button>
+<button type="button" class="chip-btn" data-cat="Club Development Fund" data-bn="ক্লাব উন্নয়ন তহবিল">Club Development Fund</button>
+</div>
+
+<h3 data-bn="২. অনুদানের পরিমাণ নির্বাচন করুন">2. Choose Amount</h3>
+<div class="amount-grid" id="donationAmounts">
+<button type="button" class="chip-btn" data-amt="100">₹100</button>
+<button type="button" class="chip-btn active" data-amt="500">₹500</button>
+<button type="button" class="chip-btn" data-amt="1000">₹1000</button>
+<button type="button" class="chip-btn" data-amt="2000">₹2000</button>
+<button type="button" class="chip-btn" data-amt="5000">₹5000</button>
+<button type="button" class="chip-btn" data-amt="custom" data-bn="নিজস্ব পরিমাণ">Custom Amount</button>
+</div>
+
+<div id="customAmountWrap" style="display:none;margin-bottom:16px;">
+<input type="number" id="customAmountInput" min="1" placeholder="Enter custom amount in ₹" data-bn-placeholder="আপনার পছন্দের পরিমাণ (₹) লিখুন">
+</div>
+
+<div style="padding:16px;border-radius:14px;background:rgba(15,118,110,.08);border:1px solid rgba(15,118,110,.22);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+<div>
+<div style="font-size:.82rem;opacity:.8;" data-bn="নির্বাচিত খাত ও পরিমাণ:">Selected Fund &amp; Amount:</div>
+<div style="font-weight:800;font-size:1.15rem;color:var(--accent-text);" id="donationSummaryText">General Donation — ₹500</div>
+</div>
+<a href="https://wa.me/918910781182" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-bn="ক্লাবের সাথে যোগাযোগ করুন">Contact via WhatsApp</a>
+</div>
+</div>
+
+<!-- Donation Methods & Notice -->
+<div class="donation-box glass animate">
+<div class="donation-notice">
+<i class="fas fa-circle-info" aria-hidden="true"></i>
+<span data-bn="অনুদানের বিবরণ ক্লাব কর্তৃক আপডেট করা হবে।">Donation details will be updated by the club.</span>
+</div>
+
+<h3 data-bn="অনুদান প্রদানের মাধ্যম">Donation Methods</h3>
+<div class="method-list">
+<div class="method-row">
+<div>
+<div class="method-label" data-bn="ইউপিআই আইডি (UPI ID)">UPI ID</div>
+<div class="method-val" data-bn="শীঘ্রই ক্লাব কর্তৃক যুক্ত হবে">Will be updated by club</div>
+</div>
+<i class="fas fa-mobile-screen-button" style="font-size:1.3rem;color:var(--accent-text);" aria-hidden="true"></i>
+</div>
+
+<div class="method-row">
+<div>
+<div class="method-label" data-bn="ব্যাংক অ্যাকাউন্ট নম্বর">Bank Account</div>
+<div class="method-val" data-bn="শীঘ্রই ক্লাব কর্তৃক যুক্ত হবে">Will be updated by club</div>
+</div>
+<i class="fas fa-building-columns" style="font-size:1.3rem;color:var(--accent-text);" aria-hidden="true"></i>
+</div>
+
+<div class="method-row">
+<div>
+<div class="method-label" data-bn="আইএফএসসি কোড (IFSC Code)">IFSC Code</div>
+<div class="method-val" data-bn="শীঘ্রই ক্লাব কর্তৃক যুক্ত হবে">Will be updated by club</div>
+</div>
+<i class="fas fa-hashtag" style="font-size:1.3rem;color:var(--accent-text);" aria-hidden="true"></i>
+</div>
+
+<div class="method-row">
+<div>
+<div class="method-label" data-bn="নগদ অনুদান (Cash Donation)">Cash Donation</div>
+<div class="method-val" data-bn="ক্লাব অফিসে রসিদসহ গ্রহণযোগ্য">Accepted at Club Office with Official Receipt</div>
+</div>
+<i class="fas fa-money-bill-wave" style="font-size:1.3rem;color:var(--accent-text);" aria-hidden="true"></i>
+</div>
+</div>
+
+<div class="qr-placeholder">
+<i class="fas fa-qrcode" aria-hidden="true"></i>
+<div style="font-weight:700;color:var(--heading);" data-bn="কিউআর কোড (QR Code)">QR Code Placeholder</div>
+<div style="font-size:.85rem;opacity:.8;" data-bn="অনুদানের বিবরণ ক্লাব কর্তৃক আপডেট করা হবে।">Donation details will be updated by the club.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= ANNUAL REPORTS & TRANSPARENCY ================= -->
+<section id="reports">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="বার্ষিক প্রতিবেদন">Annual Reports</h2>
+<p data-bn="আর্থিক স্বচ্ছতা ও জবাবদিহিতার জন্য ক্লাবের বার্ষিক হিসাব ও নিরীক্ষা প্রতিবেদন">Official financial reports, festival accounts, and audit documents for members and supporters</p>
+</div>
+
+<!-- Easy PDF upload links: replace href="#" with actual PDF URL when uploaded -->
+<div class="reports-grid">
+<div class="report-card glass animate">
+<div class="report-icon"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i></div>
+<div>
+<h3 data-bn="আর্থিক প্রতিবেদন ২০২৬-২৭">Financial Report 2026-27</h3>
+<p class="report-status" data-bn="পিডিএফ ফাইল শীঘ্রই যুক্ত হবে">PDF Upload Ready</p>
+</div>
+<a href="#reports" class="btn btn-outline btn-sm report-pdf-link" data-report="Financial Report 2026-27" data-bn="পিডিএফ দেখুন">View PDF</a>
+</div>
+
+<div class="report-card glass animate">
+<div class="report-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+<div>
+<h3 data-bn="আর্থিক প্রতিবেদন ২০২৭-২৮">Financial Report 2027-28</h3>
+<p class="report-status" data-bn="পিডিএফ ফাইল শীঘ্রই যুক্ত হবে">PDF Upload Ready</p>
+</div>
+<a href="#reports" class="btn btn-outline btn-sm report-pdf-link" data-report="Financial Report 2027-28" data-bn="পিডিএফ দেখুন">View PDF</a>
+</div>
+
+<div class="report-card glass animate">
+<div class="report-icon"><i class="fas fa-gopuram" aria-hidden="true"></i></div>
+<div>
+<h3 data-bn="উৎসবের হিসাব">Festival Accounts</h3>
+<p class="report-status" data-bn="দুর্গাপূজা ও অন্যান্য উৎসবের হিসাব">Puja &amp; Event Ledger</p>
+</div>
+<a href="#reports" class="btn btn-outline btn-sm report-pdf-link" data-report="Festival Accounts" data-bn="পিডিএফ দেখুন">View PDF</a>
+</div>
+
+<div class="report-card glass animate">
+<div class="report-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+<div>
+<h3 data-bn="অনুদান নিবন্ধন খাতা">Donation Register</h3>
+<p class="report-status" data-bn="দাতা ও অনুদানের বিবরণী">Verified Contributor Log</p>
+</div>
+<a href="#reports" class="btn btn-outline btn-sm report-pdf-link" data-report="Donation Register" data-bn="পিডিএফ দেখুন">View PDF</a>
+</div>
+
+<div class="report-card glass animate">
+<div class="report-icon"><i class="fas fa-file-shield" aria-hidden="true"></i></div>
+<div>
+<h3 data-bn="নিরীক্ষা প্রতিবেদন">Audit Report</h3>
+<p class="report-status" data-bn="বার্ষিক অডিট রিপোর্ট">Annual Audit Summary</p>
+</div>
+<a href="#reports" class="btn btn-outline btn-sm report-pdf-link" data-report="Audit Report" data-bn="পিডিএফ দেখুন">View PDF</a>
+</div>
+</div>
+
+<!-- Transparency Policy -->
+<div class="transparency-box glass animate">
+<i class="fas fa-scale-balanced" aria-hidden="true"></i>
+<div>
+<h3 data-bn="স্বচ্ছতা নীতি">Transparency Policy</h3>
+<p data-bn="২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব স্বচ্ছতা ও জবাবদিহিতার প্রতি প্রতিশ্রুতিবদ্ধ। সদস্য ও শুভানুধ্যায়ীদের জন্য বার্ষিক প্রতিবেদন, উৎসবের হিসাব এবং গুরুত্বপূর্ণ আর্থিক তথ্য প্রকাশ করা হতে পারে।">
+2 No. Khudirabad Srijuni Park Club is committed to transparency and accountability. Annual reports, festival accounts, and important financial information may be published for members and supporters.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section>
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="অর্জন">Achievements</h2>
+</div>
+
+<div class="counter-grid">
+<div class="counter-box animate">
+<div class="counter" data-target="500">0</div>
+<p data-bn="সক্রিয় সদস্য">Active Members</p>
+</div>
+
+<div class="counter-box animate">
+<div class="counter" data-target="120">0</div>
+<p data-bn="সামাজিক অনুষ্ঠান">Community Events</p>
+</div>
+
+<div class="counter-box animate">
+<div class="counter" data-target="80">0</div>
+<p data-bn="সামাজিক কর্মসূচি">Social Programs</p>
+</div>
+
+<div class="counter-box animate">
+<div class="counter" data-target="15">0</div>
+<p data-bn="বছরের সেবা">Years of Service</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact">
+<div class="container">
+<div class="section-title animate">
+<h2 data-bn="যোগাযোগ করুন">Contact Us</h2>
+<p data-bn="যেকোনো প্রশ্ন, মতামত বা সহায়তার জন্য আমাদের সাথে সরাসরি যোগাযোগ করুন">Reach out to our club leadership for inquiries, support, or community collaboration</p>
+</div>
+
+<div class="contact-grid">
+<form class="contact-form" id="contactForm" action="https://formsubmit.co/khudirabadsrijuniparkclub@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Website Inquiry - 2 No. Khudirabad Srijuni Park Club">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="Name" required placeholder="Your Name" data-bn-placeholder="আপনার নাম">
+<input type="email" name="Email" required placeholder="Your Email" data-bn-placeholder="আপনার ইমেইল">
+<input type="text" name="Subject" required placeholder="Subject" data-bn-placeholder="বিষয়">
+<textarea name="Message" rows="5" required placeholder="Message" data-bn-placeholder="বার্তা"></textarea>
+<button type="submit" class="btn btn-primary" data-bn="বার্তা পাঠান">Send Message</button>
+<div class="form-status" id="contactStatus" role="status" aria-live="polite"></div>
+</form>
+
+<div class="map">
+<iframe
+title="2 No. Khudirabad Srijuni Park Club Location Map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.39265958043572!2d88.42513132701136!3d22.493579643940627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0273b003439ce1%3A0x77d2f111e1c5d458!2s2no%20shiv%20mandir!5e0!3m2!1sen!2sin!4v1795205443360!5m2!1sen!2sin"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+</div>
+</div>
+
+<div class="contact-info-cards">
+<div class="contact-pill glass">
+<i class="fas fa-user-tie" aria-hidden="true"></i>
+<p><strong data-bn="সভাপতি:">President:</strong></p>
+<p data-bn="কৌশিক রায়">Koushik Roy</p>
+</div>
+
+<div class="contact-pill glass">
+<i class="fas fa-phone" aria-hidden="true"></i>
+<p><strong data-bn="ফোন / হোয়াটসঅ্যাপ:">Phone / WhatsApp:</strong></p>
+<p><a href="tel:+918910781182">+91 89107 81182</a></p>
+</div>
+
+<div class="contact-pill glass">
+<i class="fas fa-envelope" aria-hidden="true"></i>
+<p><strong data-bn="ইমেইল:">Email:</strong></p>
+<p><a href="mailto:khudirabadsrijuniparkclub@gmail.com">khudirabadsrijuniparkclub@gmail.com</a></p>
+</div>
+
+<div class="contact-pill glass">
+<i class="fas fa-location-dot" aria-hidden="true"></i>
+<p><strong data-bn="ঠিকানা:">Address:</strong></p>
+<p data-bn="সৃজনী পার্ক রোড, ভগবানপুর, পশ্চিমবঙ্গ, ভারত">Srijani Park Rd, Bhagabanpur, West Bengal, India</p>
+</div>
+</div>
+
+<div class="directions-wrap">
+<a href="https://maps.app.goo.gl/LdnSEz5Kdf5rQKaK7" class="btn btn-primary directions-btn" target="_blank" rel="noopener noreferrer" data-bn="📍 পথনির্দেশ দেখুন">📍 Get Directions</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<img class="logo-img" src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg" alt="Club Logo" loading="lazy">
+<h3 data-bn="২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</h3>
+<p data-bn="ঐক্য • সংস্কৃতি • সমাজসেবা">Unity • Culture • Community Service</p>
+
+<div class="socials">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<div class="footer-col">
+<h4 data-bn="যোগাযোগ">Contact</h4>
+<p><i class="fas fa-user-tie" aria-hidden="true"></i> <span data-bn="সভাপতি: কৌশিক রায়">President: Koushik Roy</span></p>
+<p><i class="fas fa-location-dot" aria-hidden="true"></i> <span data-bn="সৃজনী পার্ক রোড, ভগবানপুর, পশ্চিমবঙ্গ, ভারত">Srijani Park Rd, Bhagabanpur, West Bengal, India</span></p>
+<p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+918910781182">+91 89107 81182</a></p>
+<p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/918910781182">+91 89107 81182</a></p>
+<p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:khudirabadsrijuniparkclub@gmail.com">khudirabadsrijuniparkclub@gmail.com</a></p>
+</div>
+
+<div class="footer-col">
+<h4 data-bn="দ্রুত লিংক">Quick Links</h4>
+<a class="fl" href="#about" data-bn="পরিচিতি">About</a>
+<a class="fl" href="#events" data-bn="অনুষ্ঠান ও বিজ্ঞপ্তি">Events &amp; Announcements</a>
+<a class="fl" href="#calendar" data-bn="উৎসব ক্যালেন্ডার">Festival Calendar</a>
+<a class="fl" href="#membership" data-bn="সদস্য হোন">Become a Member</a>
+<a class="fl" href="#donation" data-bn="সহযোগিতা">Support Our Club</a>
+<a class="fl" href="#reports" data-bn="বার্ষিক প্রতিবেদন">Annual Reports</a>
+<a class="fl" href="#contact" data-bn="যোগাযোগ">Contact</a>
+</div>
+</div>
+
+<p class="copyright" data-bn="© ২০২৬ ২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব। সর্বস্বত্ব সংরক্ষিত।">© 2026 2 No. Khudirabad Srijuni Park Club. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- Floating WhatsApp & Back-to-Top -->
+<a href="https://wa.me/918910781182" class="whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="#" class="top-btn" aria-label="Scroll to top">
+<i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Gallery Lightbox -->
+<div class="lightbox" id="lightbox">
+<img id="lightbox-img" alt="">
+</div>
+
+<!-- Event Details Modal -->
+<div class="modal-backdrop" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal-box">
+<button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+<div class="modal-icon" id="modalIcon"></div>
+<span class="modal-cat" id="modalCat"></span>
+<h3 id="modalTitle"></h3>
+<div class="modal-date"><i class="fas fa-calendar-days" aria-hidden="true"></i> <span id="modalDate"></span></div>
+<p class="modal-desc" id="modalDesc"></p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<button type="button" class="btn btn-primary btn-sm" id="modalActionClose" data-bn="বন্ধ করুন">Close</button>
+</div>
+</div>
+</div>
+
+<script>
+/* =========================================================
+   1. MOBILE NAVIGATION
+========================================================= */
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+function toggleMenu(force){
+  const open = navLinks.classList.toggle('active', force);
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.classList.toggle('fa-bars', !open);
+  menuBtn.classList.toggle('fa-xmark', open);
+}
+
+menuBtn.onclick = () => toggleMenu();
+menuBtn.addEventListener('keydown', e => {
+  if(e.key === 'Enter' || e.key === ' '){
+    e.preventDefault();
+    toggleMenu();
+  }
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => toggleMenu(false));
 });
 
+/* =========================================================
+   2. LIGHT / DARK MODE
+========================================================= */
+const themeToggle = document.getElementById('darkMode');
+
+function setTheme(mode){
+  document.body.classList.toggle('dark-mode', mode === 'dark');
+  themeToggle.classList.toggle('fa-moon', mode !== 'dark');
+  themeToggle.classList.toggle('fa-sun', mode === 'dark');
+  themeToggle.setAttribute('title', mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  try{ localStorage.setItem('siteTheme', mode); }catch(e){}
+}
+
+themeToggle.addEventListener('click', () => {
+  setTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
+});
+themeToggle.addEventListener('keydown', e => {
+  if(e.key === 'Enter' || e.key === ' '){
+    e.preventDefault();
+    themeToggle.click();
+  }
+});
+
+(function(){
+  let saved = null;
+  try{ saved = localStorage.getItem('siteTheme'); }catch(e){}
+  if(saved === 'dark' || saved === 'light'){
+    setTheme(saved);
+  }else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+    setTheme('dark');
+  }
+})();
+
+/* =========================================================
+   3. SCROLL ANIMATIONS & COUNTERS
+========================================================= */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{threshold:0.06});
+
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.dataset.target;
+    const c = +counter.innerText;
+    const inc = Math.max(1, target / 80);
+    if(c < target){
+      counter.innerText = Math.min(target, Math.ceil(c + inc));
+      setTimeout(updateCount, 22);
+    }else{
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+});
+
+/* =========================================================
+   4. GALLERY LIGHTBOX
+========================================================= */
+const gallery = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+gallery.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+  });
+});
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+/* =========================================================
+   5. EVENTS & ANNOUNCEMENTS DATA + RENDERING
+   Easy to update in future: edit the arrays below
+========================================================= */
+const eaData = {
+  events: [
+    {
+      icon: 'fa-trophy',
+      badge: 'upcoming',
+      badgeEn: 'UPCOMING',
+      badgeBn: 'আসন্ন',
+      titleEn: 'Annual Sports Tournament',
+      titleBn: 'বার্ষিক ক্রীড়া প্রতিযোগিতা',
+      descEn: 'Neighborhood football, cricket, and athletics competitions for youth and children at Srijuni Park ground.',
+      descBn: 'সৃজনী পার্ক মাঠে যুব ও শিশুদের জন্য ফুটবল, ক্রিকেট ও বার্ষিক ক্রীড়া প্রতিযোগিতা।',
+      dateEn: 'January 2027',
+      dateBn: 'জানুয়ারি ২০২৭',
+      locEn: 'Srijuni Park Ground',
+      locBn: 'সৃজনী পার্ক মাঠ'
+    },
+    {
+      icon: 'fa-droplet',
+      badge: 'important',
+      badgeEn: 'IMPORTANT',
+      badgeBn: 'গুরুত্বপূর্ণ',
+      titleEn: 'Blood Donation Camp',
+      titleBn: 'রক্তদান শিবির',
+      descEn: 'Voluntary blood donation drive and free health check-up camp organized with local medical volunteers.',
+      descBn: 'স্থানীয় চিকিৎসক ও স্বেচ্ছাসেবকদের সহযোগিতায় স্বেচ্ছা রক্তদান ও স্বাস্থ্য পরীক্ষা শিবির।',
+      dateEn: '29 November 2026',
+      dateBn: '২৯ নভেম্বর ২০২৬',
+      locEn: 'Club Premises',
+      locBn: 'ক্লাব প্রাঙ্গণ'
+    },
+    {
+      icon: 'fa-gopuram',
+      badge: 'upcoming',
+      badgeEn: 'UPCOMING',
+      badgeBn: 'আসন্ন',
+      titleEn: 'Durga Puja Celebration',
+      titleBn: 'দুর্গাপূজা উদযাপন',
+      descEn: 'Five days of devotion, Pushpanjali, Dhunuchi Naach, Bhog distribution, and community togetherness.',
+      descBn: 'পাঁচ দিনব্যাপী পূজা, পুষ্পাঞ্জলি, ধুনুচি নাচ, ভোগ বিতরণ ও শারদীয় মিলনমেলা।',
+      dateEn: 'October 2027',
+      dateBn: 'অক্টোবর ২০২৭',
+      locEn: 'Club Puja Mandap',
+      locBn: 'ক্লাব পূজা মণ্ডপ'
+    },
+    {
+      icon: 'fa-tree',
+      badge: 'new',
+      badgeEn: 'NEW',
+      badgeBn: 'নতুন',
+      titleEn: 'Annual Picnic',
+      titleBn: 'বার্ষিক বনভোজন',
+      descEn: 'A joyful day-long community outing with games, breakfast, lunch, and cultural fun for all members & families.',
+      descBn: 'সদস্য ও পরিবারের সকলের জন্য খেলাধুলা, খাওয়া-দাওয়া ও আনন্দে ভরা বার্ষিক বনভোজন।',
+      dateEn: '20 December 2026',
+      dateBn: '২০ ডিসেম্বর ২০২৬',
+      locEn: 'Registration at Club Office',
+      locBn: 'নাম নথিভুক্তিকরণ ক্লাব অফিসে'
+    },
+    {
+      icon: 'fa-music',
+      badge: 'upcoming',
+      badgeEn: 'UPCOMING',
+      badgeBn: 'আসন্ন',
+      titleEn: 'Cultural Program',
+      titleBn: 'সাংস্কৃতিক অনুষ্ঠান',
+      descEn: 'An evening of Rabindra Sangeet, recitation, dance, and drama performed by local talents and youth.',
+      descBn: 'এলাকার প্রতিভাবান শিল্পীদের পরিবেশনায় রবীন্দ্রসংগীত, আবৃত্তি, নৃত্য ও নাট্যানুষ্ঠান।',
+      dateEn: 'May 2027',
+      dateBn: 'মে ২০২৭',
+      locEn: 'Srijuni Park Stage',
+      locBn: 'সৃজনী পার্ক মঞ্চ'
+    }
+  ],
+  announcements: [
+    {
+      icon: 'fa-id-card',
+      badge: 'new',
+      badgeEn: 'NEW',
+      badgeBn: 'নতুন',
+      titleEn: 'Membership Registration Open',
+      titleBn: 'সদস্যপদ নিবন্ধন চলছে',
+      descEn: 'New applications for Youth, General, Supporting, and Life Membership are now open online and at the club office.',
+      descBn: 'যুব, সাধারণ, সহযোগী ও আজীবন সদস্যপদের জন্য অনলাইন ও ক্লাব অফিসে আবেদন গ্রহণ চলছে।',
+      dateEn: 'Open Now',
+      dateBn: 'আবেদন চলছে',
+      locEn: 'Apply Online Below',
+      locBn: 'নিচের ফর্ম থেকে আবেদন করুন'
+    },
+    {
+      icon: 'fa-people-group',
+      badge: 'important',
+      badgeEn: 'IMPORTANT',
+      badgeBn: 'গুরুত্বপূর্ণ',
+      titleEn: 'Committee Meeting Notice',
+      titleBn: 'কমিটি সভার বিজ্ঞপ্তি',
+      descEn: 'All executive members are requested to attend the monthly review and winter welfare planning meeting.',
+      descBn: 'সকল কার্যনির্বাহী সদস্যকে মাসিক পর্যালোচনা ও শীতকালীন সমাজসেবা পরিকল্পনা সভায় উপস্থিত থাকার অনুরোধ জানানো হচ্ছে।',
+      dateEn: '24 November 2026 • 7:00 PM',
+      dateBn: '২৪ নভেম্বর ২০২৬ • সন্ধ্যা ৭টা',
+      locEn: 'Club Meeting Room',
+      locBn: 'ক্লাব সভাকক্ষ'
+    },
+    {
+      icon: 'fa-hands-holding-circle',
+      badge: 'new',
+      badgeEn: 'NEW',
+      badgeBn: 'নতুন',
+      titleEn: 'Volunteer Registration Open',
+      titleBn: 'স্বেচ্ছাসেবক নিবন্ধন চলছে',
+      descEn: 'Youth volunteers are invited to join our Blood Donation Camp, Decoration Team, and Social Welfare squads.',
+      descBn: 'রক্তদান শিবির, সাজসজ্জা দল ও সমাজকল্যাণমূলক কাজে অংশ নিতে আগ্রহী তরুণ স্বেচ্ছাসেবকদের আহ্বান জানানো হচ্ছে।',
+      dateEn: 'Ongoing',
+      dateBn: 'নিবন্ধন চলছে',
+      locEn: 'Select in Membership Form',
+      locBn: 'সদস্যপদ ফর্মে নির্বাচন করুন'
+    },
+    {
+      icon: 'fa-clipboard-list',
+      badge: 'upcoming',
+      badgeEn: 'UPCOMING',
+      badgeBn: 'আসন্ন',
+      titleEn: 'Upcoming Festival Planning Meeting',
+      titleBn: 'আসন্ন উৎসব পরিকল্পনা সভা',
+      descEn: 'Preparation meeting for Annual Picnic, Saraswati Puja 2027, and winter cultural activities. All members welcome.',
+      descBn: 'বার্ষিক বনভোজন, সরস্বতী পূজা ২০২৭ এবং শীতকালীন সাংস্কৃতিক অনুষ্ঠানের প্রস্তুতি সভা। সকল সদস্য আমন্ত্রিত।',
+      dateEn: '6 December 2026 • 6:30 PM',
+      dateBn: '৬ ডিসেম্বর ২০২৬ • সন্ধ্যা ৬:৩০',
+      locEn: 'Club Hall',
+      locBn: 'ক্লাব হলঘর'
+    }
+  ]
+};
+
+let currentEATab = 'events';
+
+function getCurrentLang(){
+  return document.documentElement.getAttribute('lang') === 'bn' ? 'bn' : 'en';
+}
+
+function renderEA(){
+  const lang = getCurrentLang();
+  const container = document.getElementById('eaContainer');
+  const items = eaData[currentEATab];
+  container.innerHTML = items.map(item => `
+    <article class="ea-card glass">
+      <div>
+        <div class="ea-top">
+          <div class="ea-icon"><i class="fas ${item.icon}" aria-hidden="true"></i></div>
+          <span class="badge badge-${item.badge}">${lang === 'bn' ? item.badgeBn : item.badgeEn}</span>
+        </div>
+        <h3 style="margin-top:14px;">${lang === 'bn' ? item.titleBn : item.titleEn}</h3>
+        <p>${lang === 'bn' ? item.descBn : item.descEn}</p>
+      </div>
+      <div class="ea-meta">
+        <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> ${lang === 'bn' ? item.dateBn : item.dateEn}</span>
+        <span><i class="fas fa-location-dot" aria-hidden="true"></i> ${lang === 'bn' ? item.locBn : item.locEn}</span>
+      </div>
+    </article>
+  `).join('');
+}
+
+function switchEATab(tab){
+  currentEATab = tab;
+  const evBtn = document.getElementById('tabEventsBtn');
+  const anBtn = document.getElementById('tabAnnouncementsBtn');
+  evBtn.classList.toggle('active', tab === 'events');
+  anBtn.classList.toggle('active', tab === 'announcements');
+  evBtn.setAttribute('aria-selected', tab === 'events');
+  anBtn.setAttribute('aria-selected', tab === 'announcements');
+  renderEA();
+}
+
+/* =========================================================
+   6. FESTIVAL & HOLIDAY CALENDAR (2026 & 2027)
+   Categories: festival (red), national (green), club (blue), meeting (orange)
+========================================================= */
+const calendarEvents = [
+  // ---- 2026 BENGALI FESTIVALS ----
+  {date:'2026-01-23', cat:'festival', emoji:'📚', titleEn:'Saraswati Puja', titleBn:'সরস্বতী পূজা', descEn:'Worship of Goddess Saraswati, Puspanjali, and cultural morning at the club.', descBn:'বিদ্যার দেবী সরস্বতী পূজা, পুষ্পাঞ্জলি এবং ক্লাব প্রাঙ্গণে সাংস্কৃতিক অনুষ্ঠান।'},
+  {date:'2026-03-03', cat:'festival', emoji:'🎨', titleEn:'Doljatra', titleBn:'দোলযাত্রা', descEn:'Festival of colors, abir play, and neighborhood spring celebration.', descBn:'রঙের উৎসব দোলযাত্রা, আবির খেলা ও বসন্ত উৎসব উদযাপন।'},
+  {date:'2026-04-15', cat:'festival', emoji:'🌾', titleEn:'Poila Boishakh', titleBn:'পহেলা বৈশাখ', descEn:'Bengali New Year celebration with Prabhat Pheri, sweets, and cultural evening.', descBn:'বাংলা নববর্ষ বরণ, প্রভাতফেরি, মিষ্টিমুখ ও সাংস্কৃতিক সন্ধ্যা।'},
+  {date:'2026-05-09', cat:'festival', emoji:'✍️', titleEn:'Rabindra Jayanti', titleBn:'রবীন্দ্র জয়ন্তী', descEn:'Tribute to Kobiguru Rabindranath Tagore through songs, poetry, and dance.', descBn:'কবিগুরু রবীন্দ্রনাথ ঠাকুরের জন্মবার্ষিকী উপলক্ষে সংগীত, কবিতা ও নৃত্যানুষ্ঠান।'},
+  {date:'2026-10-10', cat:'festival', emoji:'🌙', titleEn:'Mahalaya', titleBn:'মহালয়া', descEn:'Auspicious beginning of Devi Paksha with Chandi Path and Mahalaya morning gathering.', descBn:'দেবীপক্ষের সূচনা, চণ্ডীপাঠ ও মহালয়ার প্রাতঃকালীন অনুষ্ঠান।'},
+  {date:'2026-10-19', cat:'festival', emoji:'🌸', titleEn:'Maha Ashtami', titleBn:'মহাষ্টমী', descEn:'Grand Maha Ashtami Pushpanjali, Kumari Puja, and Sandhi Puja at the club mandap.', descBn:'ক্লাব মণ্ডপে মহাষ্টমীর পুষ্পাঞ্জলি, কুমারী পূজা ও সন্ধিপূজা।'},
+  {date:'2026-10-20', cat:'festival', emoji:'🌸', titleEn:'Maha Navami', titleBn:'মহানবমী', descEn:'Maha Navami Aarti, community Bhog Prasad, and evening cultural gathering.', descBn:'মহানবমী আরতি, মহাপ্রসাদ ভোগ বিতরণ ও সন্ধ্যায় সাংস্কৃতিক মিলনমেলা।'},
+  {date:'2026-10-21', cat:'festival', emoji:'🌸', titleEn:'Vijaya Dashami', titleBn:'বিজয়া দশমী', descEn:'Sindoor Khela, immersion procession, and Bijoya greetings among neighbors.', descBn:'সিঁদুর খেলা, প্রতিমা নিরঞ্জন শোভাযাত্রা এবং শুভ বিজয়ার শুভেচ্ছা বিনিময়।'},
+  {date:'2026-11-15', cat:'festival', emoji:'🪔', titleEn:'Chhath Puja', titleBn:'ছট পূজা', descEn:'Sun worship festival celebrated with devotion and community warmth.', descBn:'সূর্য উপাসনার পবিত্র উৎসব ছট পূজা ভক্তি ও আন্তরিকতার সাথে উদযাপন।'},
+  {date:'2026-12-25', cat:'festival', emoji:'🎄', titleEn:'Christmas', titleBn:'বড়দিন', descEn:'Joyous Christmas celebration, winter cake distribution, and children’s games.', descBn:'বড়দিন উদযাপন, শীতকালীন কেক বিতরণ এবং শিশুদের আনন্দ অনুষ্ঠান।'},
+
+  // ---- 2027 BENGALI FESTIVALS ----
+  {date:'2027-02-11', cat:'festival', emoji:'📚', titleEn:'Saraswati Puja', titleBn:'সরস্বতী পূজা', descEn:'Saraswati Puja 2027 celebrations, Hatey Khori, and student cultural programs.', descBn:'সরস্বতী পূজা ২০২৭ উদযাপন, হাতেখড়ি এবং শিক্ষার্থীদের সাংস্কৃতিক অনুষ্ঠান।'},
+  {date:'2027-03-22', cat:'festival', emoji:'🎨', titleEn:'Doljatra', titleBn:'দোলযাত্রা', descEn:'Festival of colors and community spring gathering at Srijuni Park.', descBn:'সৃজনী পার্কে রঙের উৎসব দোলযাত্রা ও বসন্ত মিলনমেলা।'},
+  {date:'2027-04-15', cat:'festival', emoji:'🌾', titleEn:'Poila Boishakh', titleBn:'পহেলা বৈশাখ', descEn:'Bengali New Year celebration with morning rally and cultural tribute.', descBn:'বাংলা নববর্ষ ১৪৩৪ বরণ, প্রভাতফেরি ও সাংস্কৃতিক অনুষ্ঠান।'},
+  {date:'2027-05-09', cat:'festival', emoji:'✍️', titleEn:'Rabindra Jayanti', titleBn:'রবীন্দ্র জয়ন্তী', descEn:'Evening of Tagore’s songs, recitations, and dance drama.', descBn:'রবীন্দ্রসংগীত, আবৃত্তি ও নৃত্যনাট্যের মাধ্যমে কবিগুরুকে শ্রদ্ধাঞ্জলি।'},
+  {date:'2027-09-30', cat:'festival', emoji:'🌙', titleEn:'Mahalaya', titleBn:'মহালয়া', descEn:'Auspicious start of Durga Puja 2027 with morning Chandi Path.', descBn:'শারদোৎসব ২০২৭-এর শুভ সূচনা ও প্রাতঃকালীন চণ্ডীপাঠ।'},
+  {date:'2027-10-05', cat:'festival', emoji:'🌸', titleEn:'Maha Shashthi', titleBn:'মহাষষ্ঠী', descEn:'Bodhon, Amantran, and inauguration of the club Durga Puja Pandal.', descBn:'বোধন, আমন্ত্রণ ও ক্লাবের দুর্গাপূজা মণ্ডপের শুভ উদ্বোধন।'},
+  {date:'2027-10-06', cat:'festival', emoji:'🌸', titleEn:'Maha Saptami', titleBn:'মহাসপ্তমী', descEn:'Nabapatrika Snan, Saptami Puja, and evening Dhak competition.', descBn:'নবপত্রিকা স্নান, মহাসপ্তমী পূজা ও সন্ধ্যায় ঢাক বাজনা অনুষ্ঠান।'},
+  {date:'2027-10-07', cat:'festival', emoji:'🌸', titleEn:'Maha Ashtami', titleBn:'মহাষ্টমী', descEn:'Maha Ashtami Pushpanjali, Sandhi Puja, and Prasad distribution.', descBn:'মহাষ্টমী পুষ্পাঞ্জলি, সন্ধিপূজা ও প্রসাদ বিতরণ।'},
+  {date:'2027-10-08', cat:'festival', emoji:'🌸', titleEn:'Maha Navami', titleBn:'মহানবমী', descEn:'Maha Navami Hom, community Bhog, and cultural night.', descBn:'মহানবমী হোম-যজ্ঞ, গণভোগ ও সাংস্কৃতিক সন্ধ্যা।'},
+  {date:'2027-10-10', cat:'festival', emoji:'🌸', titleEn:'Vijaya Dashami', titleBn:'বিজয়া দশমী', descEn:'Sindoor Khela, Bisarjan, and Bijoya Sammilani greetings.', descBn:'সিঁদুর খেলা, প্রতিমা বিসর্জন ও বিজয়া সম্মিলনীর শুভেচ্ছা বিনিময়।'},
+  {date:'2027-10-29', cat:'festival', emoji:'🪔', titleEn:'Kali Puja', titleBn:'কালীপূজা', descEn:'Festival of lights, Shyamasangeet, and midnight Kali Puja at the club.', descBn:'দীপাবলি আলোকসজ্জা, শ্যামাসংগীত ও মধ্যরাতে শ্রীশ্রী কালীপূজা।'},
+  {date:'2027-11-15', cat:'festival', emoji:'☀️', titleEn:'Chhath Puja', titleBn:'ছট পূজা', descEn:'Devotional Chhath Puja rituals and community celebration.', descBn:'ভক্তি ও নিষ্ঠার সাথে পবিত্র ছট পূজা উদযাপন।'},
+  {date:'2027-12-25', cat:'festival', emoji:'🎄', titleEn:'Christmas', titleBn:'বড়দিন', descEn:'Winter celebration, gifts for kids, and community cheer.', descBn:'বড়দিন উদযাপন, শিশুদের উপহার ও শীতকালীন আনন্দ উৎসব।'},
+
+  // ---- NATIONAL HOLIDAYS (2026 & 2027) ----
+  {date:'2026-01-26', cat:'national', emoji:'🇮🇳', titleEn:'Republic Day', titleBn:'প্রজাতন্ত্র দিবস', descEn:'National Flag hoisting at the club ground followed by patriotic songs.', descBn:'ক্লাব প্রাঙ্গণে জাতীয় পতাকা উত্তোলন ও দেশাত্মবোধক সংগীতানুষ্ঠান।'},
+  {date:'2026-08-15', cat:'national', emoji:'🇮🇳', titleEn:'Independence Day', titleBn:'স্বাধীনতা দিবস', descEn:'Flag hoisting, parade, and tribute to freedom fighters.', descBn:'জাতীয় পতাকা উত্তোলন, কুচকাওয়াজ ও স্বাধীনতা সংগ্রামীদের প্রতি শ্রদ্ধাঞ্জলি।'},
+  {date:'2026-10-02', cat:'national', emoji:'🇮🇳', titleEn:'Gandhi Jayanti', titleBn:'গান্ধী জয়ন্তী', descEn:'Swachhata neighborhood cleanliness drive and tribute to Mahatma Gandhi.', descBn:'পাড়া পরিচ্ছন্নতা অভিযান ও মহাত্মা গান্ধীর প্রতি শ্রদ্ধা নিবেদন।'},
+  {date:'2027-01-26', cat:'national', emoji:'🇮🇳', titleEn:'Republic Day', titleBn:'প্রজাতন্ত্র দিবস', descEn:'Flag hoisting ceremony and youth patriotic program at Srijuni Park.', descBn:'সৃজনী পার্কে জাতীয় পতাকা উত্তোলন ও যুবদের দেশাত্মবোধক অনুষ্ঠান।'},
+  {date:'2027-08-15', cat:'national', emoji:'🇮🇳', titleEn:'Independence Day', titleBn:'স্বাধীনতা দিবস', descEn:'Celebration of India’s Independence Day with flag hoisting and sweets.', descBn:'জাতীয় পতাকা উত্তোলন ও মিষ্টি বিতরণের মাধ্যমে স্বাধীনতা দিবস উদযাপন।'},
+  {date:'2027-10-02', cat:'national', emoji:'🇮🇳', titleEn:'Gandhi Jayanti', titleBn:'গান্ধী জয়ন্তী', descEn:'Community cleanliness initiative and peace tribute.', descBn:'সম্মিলিত পরিচ্ছন্নতা অভিযান ও শান্তি বার্তা স্মরণ।'},
+
+  // ---- SAMPLE CLUB EVENTS & MEETINGS (2026 & 2027) ----
+  {date:'2026-11-24', cat:'meeting', emoji:'📢', titleEn:'Committee Meeting Notice', titleBn:'কমিটি সভার বিজ্ঞপ্তি', descEn:'Executive Committee review meeting at 7:00 PM regarding Blood Camp & winter drives.', descBn:'রক্তদান শিবির ও শীতকালীন সমাজসেবা বিষয়ে সন্ধ্যা ৭টায় কার্যনির্বাহী কমিটির সভা।'},
+  {date:'2026-11-29', cat:'club', emoji:'🩸', titleEn:'Blood Donation Camp', titleBn:'রক্তদান শিবির', descEn:'Annual voluntary blood donation camp & health check-up at Club Premises (9 AM – 2 PM).', descBn:'ক্লাব প্রাঙ্গণে স্বেচ্ছা রক্তদান ও বিনামূল্যে স্বাস্থ্য পরীক্ষা শিবির (সকাল ৯টা – দুপুর ২টো)।'},
+  {date:'2026-12-06', cat:'meeting', emoji:'📝', titleEn:'Upcoming Festival Planning Meeting', titleBn:'আসন্ন উৎসব পরিকল্পনা সভা', descEn:'Open planning meeting for Annual Picnic and Saraswati Puja 2027 at 6:30 PM.', descBn:'বার্ষিক বনভোজন ও সরস্বতী পূজা ২০২৭ প্রস্তুতি নিয়ে সন্ধ্যা ৬:৩০-এ সাধারণ সভা।'},
+  {date:'2026-12-20', cat:'club', emoji:'🧺', titleEn:'Annual Picnic', titleBn:'বার্ষিক বনভোজন', descEn:'Club Annual Picnic for members, families, and local residents.', descBn:'সদস্য, পরিবার ও পাড়ার বাসিন্দাদের নিয়ে আনন্দমুখর বার্ষিক বনভোজন।'},
+  {date:'2027-01-10', cat:'meeting', emoji:'🏛️', titleEn:'Annual General Meeting', titleBn:'বার্ষিক সাধারণ সভা', descEn:'Review of annual reports, membership updates, and sports tournament schedule.', descBn:'বার্ষিক প্রতিবেদন পর্যালোচনা, সদস্যপদ আপডেট ও ক্রীড়া প্রতিযোগিতার সময়সূচি নির্ধারণ।'},
+  {date:'2027-01-17', cat:'club', emoji:'⚽', titleEn:'Annual Sports Tournament', titleBn:'বার্ষিক ক্রীড়া প্রতিযোগিতা', descEn:'Full-day football, cricket, and athletics tournament at Srijuni Park Ground.', descBn:'সৃজনী পার্ক মাঠে দিনব্যাপী ফুটবল, ক্রিকেট ও বার্ষিক ক্রীড়া প্রতিযোগিতা।'},
+  {date:'2027-03-07', cat:'club', emoji:'🩸', titleEn:'Spring Blood Donation Camp', titleBn:'বসন্তকালীন রক্তদান শিবির', descEn:'Community blood donation camp organized by youth volunteers.', descBn:'যুব স্বেচ্ছাসেবকদের উদ্যোগে বসন্তকালীন রক্তদান শিবির।'},
+  {date:'2027-07-18', cat:'club', emoji:'🎭', titleEn:'Cultural Program', titleBn:'সাংস্কৃতিক অনুষ্ঠান', descEn:'Monsoon cultural evening featuring music, dance, and drama by club members.', descBn:'ক্লাব সদস্যদের পরিবেশনায় বর্ষামঙ্গল ও সাংস্কৃতিক সন্ধ্যা।'},
+  {date:'2027-09-12', cat:'meeting', emoji:'🪔', titleEn:'Durga Puja Planning Meeting', titleBn:'দুর্গাপূজা পরিকল্পনা সভা', descEn:'Committee and volunteer meeting to finalize Durga Puja 2027 pandal and committees.', descBn:'দুর্গাপূজা ২০২৭ মণ্ডপ ও উপ-কমিটি চূড়ান্ত করতে সাধারণ ও স্বেচ্ছাসেবক সভা।'}
+];
+
+const monthNamesEn = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const monthNamesBn = ['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+const weekdaysEn = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const weekdaysBn = ['রবি','সোম','মঙ্গল','বুধ','বৃহঃ','শুক্র','শনি'];
+
+const catMeta = {
+  festival: {en:'Bengali Festival', bn:'বাঙালি উৎসব', color:'var(--cat-festival)', bg:'var(--cat-festival-bg)'},
+  national: {en:'National Holiday', bn:'জাতীয় ছুটি', color:'var(--cat-national)', bg:'var(--cat-national-bg)'},
+  club:     {en:'Club Event', bn:'ক্লাব অনুষ্ঠান', color:'var(--cat-club)', bg:'var(--cat-club-bg)'},
+  meeting:  {en:'Meeting & Notice', bn:'সভা ও বিজ্ঞপ্তি', color:'var(--cat-meeting)', bg:'var(--cat-meeting-bg)'}
+};
+
+// Initialize calendar view to current real date (falls back within 2026-2027 smoothly)
+const realToday = new Date();
+const todayISO = `${realToday.getFullYear()}-${String(realToday.getMonth()+1).padStart(2,'0')}-${String(realToday.getDate()).padStart(2,'0')}`;
+let calYear = (realToday.getFullYear() >= 2026 && realToday.getFullYear() <= 2027) ? realToday.getFullYear() : 2026;
+let calMonth = (realToday.getFullYear() >= 2026 && realToday.getFullYear() <= 2027) ? realToday.getMonth() : 0;
+let calFilter = 'all';
+
+function formatDateNice(iso, lang){
+  const [y, m, d] = iso.split('-').map(Number);
+  const mName = (lang === 'bn' ? monthNamesBn : monthNamesEn)[m - 1];
+  return `${d} ${mName} ${y}`;
+}
+
+function getFilteredEvents(){
+  return calFilter === 'all' ? calendarEvents : calendarEvents.filter(ev => ev.cat === calFilter);
+}
+
+function renderCalendar(){
+  const lang = getCurrentLang();
+  const titleEl = document.getElementById('calMonthTitle');
+  const weekdaysEl = document.getElementById('calWeekdays');
+  const daysEl = document.getElementById('calDays');
+
+  titleEl.textContent = `${(lang === 'bn' ? monthNamesBn : monthNamesEn)[calMonth]} ${calYear}`;
+  document.getElementById('year2026Btn').classList.toggle('active', calYear === 2026);
+  document.getElementById('year2027Btn').classList.toggle('active', calYear === 2027);
+
+  weekdaysEl.innerHTML = (lang === 'bn' ? weekdaysBn : weekdaysEn).map(w => `<div>${w}</div>`).join('');
+
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const totalDays = new Date(calYear, calMonth + 1, 0).getDate();
+  const filtered = getFilteredEvents();
+
+  let html = '';
+  for(let i = 0; i < firstDay; i++){
+    html += `<div class="cal-day empty" aria-hidden="true"></div>`;
+  }
+
+  for(let day = 1; day <= totalDays; day++){
+    const iso = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const dayEvents = filtered.filter(ev => ev.date === iso);
+    const isToday = iso === todayISO;
+    const pills = dayEvents.slice(0, 2).map(ev =>
+      `<div class="cal-event-pill pill-${ev.cat}">${ev.emoji} ${lang === 'bn' ? ev.titleBn : ev.titleEn}</div>`
+    ).join('');
+    const more = dayEvents.length > 2 ? `<div style="font-size:.64rem;font-weight:700;color:var(--accent-text);">+${dayEvents.length - 2}</div>` : '';
+
+    html += `
+      <div class="cal-day ${isToday ? 'today' : ''}" tabindex="0" role="button" aria-label="${formatDateNice(iso, lang)}" onclick="handleDayClick('${iso}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();handleDayClick('${iso}');}">
+        <div class="cal-day-num">
+          <span>${day}</span>
+          ${isToday ? `<span class="today-tag">${lang === 'bn' ? 'আজ' : 'Today'}</span>` : ''}
+        </div>
+        <div class="cal-day-dots">${pills}${more}</div>
+      </div>
+    `;
+  }
+
+  daysEl.innerHTML = html;
+  renderSidebars();
+}
+
+function handleDayClick(iso){
+  const lang = getCurrentLang();
+  const dayEvents = getFilteredEvents().filter(ev => ev.date === iso);
+  const popup = document.getElementById('calPopup');
+  const popupTitle = document.getElementById('calPopupDateTitle');
+  const popupList = document.getElementById('calPopupList');
+
+  if(dayEvents.length === 1){
+    popup.classList.remove('open');
+    openEventModal(dayEvents[0]);
+    return;
+  }
+
+  popupTitle.textContent = formatDateNice(iso, lang);
+  if(dayEvents.length === 0){
+    popupList.innerHTML = `<p style="opacity:.78;font-size:.92rem;">${lang === 'bn' ? 'এই তারিখে কোনো নির্ধারিত উৎসব বা অনুষ্ঠান নেই।' : 'No scheduled festival, holiday, or club event on this date.'}</p>`;
+  }else{
+    popupList.innerHTML = dayEvents.map(ev => {
+      const idx = calendarEvents.indexOf(ev);
+      return `
+        <div class="cal-popup-item" onclick="openEventModalByIndex(${idx})">
+          <div>
+            <strong>${ev.emoji} ${lang === 'bn' ? ev.titleBn : ev.titleEn}</strong>
+            <div style="font-size:.82rem;opacity:.8;">${lang === 'bn' ? catMeta[ev.cat].bn : catMeta[ev.cat].en}</div>
+          </div>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      `;
+    }).join('');
+  }
+  popup.classList.add('open');
+}
+
+function renderSidebars(){
+  const lang = getCurrentLang();
+  // Upcoming Events Sidebar (from todayISO onward, sorted)
+  const upcoming = calendarEvents
+    .filter(ev => ev.date >= todayISO && (calFilter === 'all' || ev.cat === calFilter))
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(0, 8);
+
+  const upEl = document.getElementById('upcomingSidebarList');
+  if(upcoming.length === 0){
+    upEl.innerHTML = `<p style="opacity:.75;font-size:.9rem;">${lang === 'bn' ? 'কোনো আসন্ন অনুষ্ঠান পাওয়া যায়নি।' : 'No upcoming items for this filter.'}</p>`;
+  }else{
+    upEl.innerHTML = upcoming.map(ev => {
+      const idx = calendarEvents.indexOf(ev);
+      return `
+        <button type="button" class="sidebar-item" onclick="jumpAndOpen(${idx})">
+          <span class="sidebar-emoji">${ev.emoji}</span>
+          <div class="sidebar-info">
+            <div class="sidebar-title">${lang === 'bn' ? ev.titleBn : ev.titleEn}</div>
+            <div class="sidebar-date">${formatDateNice(ev.date, lang)}</div>
+          </div>
+          <span class="dot dot-${ev.cat}"></span>
+        </button>
+      `;
+    }).join('');
+  }
+
+  // Festival Sidebar (for currently viewed year)
+  const festHeading = document.getElementById('festivalSidebarHeading');
+  festHeading.textContent = lang === 'bn' ? `${calYear} উৎসব তালিকা` : `${calYear} Festivals`;
+
+  const fests = calendarEvents
+    .filter(ev => ev.cat === 'festival' && ev.date.startsWith(String(calYear)))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  const festEl = document.getElementById('festivalSidebarList');
+  festEl.innerHTML = fests.map(ev => {
+    const idx = calendarEvents.indexOf(ev);
+    return `
+      <button type="button" class="sidebar-item" onclick="jumpAndOpen(${idx})">
+        <span class="sidebar-emoji">${ev.emoji}</span>
+        <div class="sidebar-info">
+          <div class="sidebar-title">${lang === 'bn' ? ev.titleBn : ev.titleEn}</div>
+          <div class="sidebar-date">${formatDateNice(ev.date, lang)}</div>
+        </div>
+      </button>
+    `;
+  }).join('');
+}
+
+function jumpAndOpen(idx){
+  const ev = calendarEvents[idx];
+  if(!ev) return;
+  const [y, m] = ev.date.split('-').map(Number);
+  calYear = y;
+  calMonth = m - 1;
+  renderCalendar();
+  openEventModal(ev);
+}
+
+function openEventModalByIndex(idx){
+  if(calendarEvents[idx]) openEventModal(calendarEvents[idx]);
+}
+
+function openEventModal(ev){
+  const lang = getCurrentLang();
+  const modal = document.getElementById('eventModal');
+  const meta = catMeta[ev.cat];
+  document.getElementById('modalIcon').textContent = ev.emoji;
+  const catEl = document.getElementById('modalCat');
+  catEl.textContent = lang === 'bn' ? meta.bn : meta.en;
+  catEl.style.background = meta.bg;
+  catEl.style.color = meta.color;
+  document.getElementById('modalTitle').textContent = lang === 'bn' ? ev.titleBn : ev.titleEn;
+  document.getElementById('modalDate').textContent = formatDateNice(ev.date, lang);
+  document.getElementById('modalDesc').textContent = lang === 'bn' ? ev.descBn : ev.descEn;
+  modal.classList.add('open');
+}
+
+function closeEventModal(){
+  document.getElementById('eventModal').classList.remove('open');
+}
+
+document.getElementById('modalCloseBtn').addEventListener('click', closeEventModal);
+document.getElementById('modalActionClose').addEventListener('click', closeEventModal);
+document.getElementById('eventModal').addEventListener('click', e => {
+  if(e.target.id === 'eventModal') closeEventModal();
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') closeEventModal();
+});
+
+document.getElementById('calPopupClose').addEventListener('click', () => {
+  document.getElementById('calPopup').classList.remove('open');
+});
+
+document.getElementById('calPrevBtn').addEventListener('click', () => {
+  calMonth--;
+  if(calMonth < 0){ calMonth = 11; calYear--; }
+  document.getElementById('calPopup').classList.remove('open');
+  renderCalendar();
+});
+
+document.getElementById('calNextBtn').addEventListener('click', () => {
+  calMonth++;
+  if(calMonth > 11){ calMonth = 0; calYear++; }
+  document.getElementById('calPopup').classList.remove('open');
+  renderCalendar();
+});
+
+document.getElementById('calTodayBtn').addEventListener('click', () => {
+  calYear = realToday.getFullYear();
+  calMonth = realToday.getMonth();
+  document.getElementById('calPopup').classList.remove('open');
+  renderCalendar();
+});
+
+function jumpToYear(year){
+  calYear = year;
+  document.getElementById('calPopup').classList.remove('open');
+  renderCalendar();
+}
+
+document.querySelectorAll('.cal-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cal-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    calFilter = btn.dataset.filter;
+    document.getElementById('calPopup').classList.remove('open');
+    renderCalendar();
+  });
+});
+
+/* =========================================================
+   7. MEMBERSHIP PLAN SELECTION & FORMSUBMIT HANDLER
+========================================================= */
+function selectMembershipPlan(planValue){
+  const select = document.getElementById('mType');
+  if(select){
+    select.value = planValue;
+  }
+  const wrapper = document.getElementById('membershipFormWrapper');
+  if(wrapper){
+    wrapper.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+
+const membershipForm = document.getElementById('membershipForm');
+const membershipStatus = document.getElementById('membershipStatus');
+const membershipSubmitBtn = document.getElementById('membershipSubmitBtn');
+
+membershipForm.addEventListener('submit', async function(e){
+  e.preventDefault();
+  const lang = getCurrentLang();
+  membershipSubmitBtn.disabled = true;
+  membershipSubmitBtn.textContent = lang === 'bn' ? 'পাঠানো হচ্ছে...' : 'Submitting...';
+  membershipStatus.className = 'form-status';
+  membershipStatus.style.display = 'none';
+
+  const formData = new FormData(membershipForm);
+  const interests = [];
+  membershipForm.querySelectorAll('input[name="Interests[]"]:checked').forEach(cb => interests.push(cb.value));
+  formData.delete('Interests[]');
+  formData.append('Areas of Interest', interests.length ? interests.join(', ') : 'None selected');
+
+  try{
+    const res = await fetch('https://formsubmit.co/ajax/khudirabadsrijuniparkclub@gmail.com', {
+      method: 'POST',
+      headers: {'Accept': 'application/json'},
+      body: formData
+    });
+    if(res.ok){
+      membershipStatus.className = 'form-status success';
+      membershipStatus.textContent = lang === 'bn'
+        ? '✅ আপনার সদস্যপদ আবেদন সফলভাবে জমা হয়েছে! ক্লাব কমিটি শীঘ্রই আপনার সাথে যোগাযোগ করবে।'
+        : '✅ Your membership application has been submitted successfully! The club committee will contact you soon.';
+      membershipStatus.style.display = 'block';
+      membershipForm.reset();
+    }else{
+      throw new Error('Submission failed');
+    }
+  }catch(err){
+    membershipStatus.className = 'form-status error';
+    membershipStatus.textContent = lang === 'bn'
+      ? '⚠️ নেটওয়ার্ক সমস্যার কারণে জমা দেওয়া যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন বা হোয়াটসঅ্যাপে যোগাযোগ করুন।'
+      : '⚠️ Could not submit due to a network error. Please try again or contact us on WhatsApp (+91 89107 81182).';
+    membershipStatus.style.display = 'block';
+  }finally{
+    membershipSubmitBtn.disabled = false;
+    membershipSubmitBtn.textContent = lang === 'bn' ? 'আবেদন জমা দিন' : 'Submit Membership Application';
+  }
+});
+
+/* Contact Form AJAX Submission */
+const contactForm = document.getElementById('contactForm');
+const contactStatus = document.getElementById('contactStatus');
+contactForm.addEventListener('submit', async function(e){
+  e.preventDefault();
+  const lang = getCurrentLang();
+  const btn = contactForm.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  try{
+    const res = await fetch('https://formsubmit.co/ajax/khudirabadsrijuniparkclub@gmail.com', {
+      method: 'POST',
+      headers: {'Accept': 'application/json'},
+      body: new FormData(contactForm)
+    });
+    if(res.ok){
+      contactStatus.className = 'form-status success';
+      contactStatus.textContent = lang === 'bn'
+        ? '✅ আপনার বার্তা সফলভাবে পাঠানো হয়েছে!'
+        : '✅ Thank you! Your message has been sent to the club.';
+      contactStatus.style.display = 'block';
+      contactForm.reset();
+    }else{
+      throw new Error('Error');
+    }
+  }catch(err){
+    contactStatus.className = 'form-status error';
+    contactStatus.textContent = lang === 'bn'
+      ? '⚠️ বার্তা পাঠানো যায়নি। অনুগ্রহ করে সরাসরি ফোন বা হোয়াটসঅ্যাপ করুন।'
+      : '⚠️ Unable to send message right now. Please call or WhatsApp +91 89107 81182.';
+    contactStatus.style.display = 'block';
+  }finally{
+    btn.disabled = false;
+  }
+});
+
+/* =========================================================
+   8. DONATION INTERACTIVE SELECTION
+========================================================= */
+let selectedDonCat = {en: 'General Donation', bn: 'সাধারণ অনুদান'};
+let selectedDonAmt = '500';
+
+function updateDonationSummary(){
+  const lang = getCurrentLang();
+  const catText = lang === 'bn' ? selectedDonCat.bn : selectedDonCat.en;
+  const amtText = selectedDonAmt ? `₹${selectedDonAmt}` : (lang === 'bn' ? 'কাস্টম' : 'Custom');
+  document.getElementById('donationSummaryText').textContent = `${catText} — ${amtText}`;
+}
+
+document.querySelectorAll('#donationCategories .chip-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#donationCategories .chip-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedDonCat = {en: btn.dataset.en || btn.dataset.cat, bn: btn.dataset.bn || btn.dataset.cat};
+    updateDonationSummary();
+  });
+});
+
+document.querySelectorAll('#donationAmounts .chip-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#donationAmounts .chip-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const customWrap = document.getElementById('customAmountWrap');
+    if(btn.dataset.amt === 'custom'){
+      customWrap.style.display = 'block';
+      const customVal = document.getElementById('customAmountInput').value;
+      selectedDonAmt = customVal || '';
+    }else{
+      customWrap.style.display = 'none';
+      selectedDonAmt = btn.dataset.amt;
+    }
+    updateDonationSummary();
+  });
+});
+
+document.getElementById('customAmountInput').addEventListener('input', e => {
+  selectedDonAmt = e.target.value;
+  updateDonationSummary();
+});
+
+/* Report placeholder links feedback */
+document.querySelectorAll('.report-pdf-link').forEach(link => {
+  link.addEventListener('click', e => {
+    if(link.getAttribute('href') === '#reports'){
+      e.preventDefault();
+      const lang = getCurrentLang();
+      alert(lang === 'bn'
+        ? 'এই প্রতিবেদনটির পিডিএফ শীঘ্রই ক্লাব কর্তৃক আপলোড করা হবে।'
+        : 'PDF for "' + link.dataset.report + '" will be uploaded here by the club soon.');
+    }
+  });
+});
+
+/* =========================================================
+   9. BILINGUAL (ENGLISH / BENGALI) SUPPORT
+========================================================= */
+const langToggle = document.getElementById('langToggle');
+const metaDesc = document.querySelector('meta[name="description"]');
+
+const i18n = {
+  en: {
+    title: '2 No. Khudirabad Srijuni Park Club',
+    desc: '2 No. Khudirabad Srijuni Park Club, Bhagabanpur, West Bengal – unity, culture and community service: festivals, sports, blood donation camps, membership and social welfare.',
+    btn: 'বাংলা',
+    label: 'Switch to Bengali'
+  },
+  bn: {
+    title: '২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব',
+    desc: '২ নং খুদিরাবাদ সৃজনী পার্ক ক্লাব, ভগবানপুর, পশ্চিমবঙ্গ – ঐক্য, সংস্কৃতি ও সমাজসেবা: উৎসব, ক্রীড়া, রক্তদান শিবির ও সমাজকল্যাণ।',
+    btn: 'English',
+    label: 'Switch to English'
+  }
+};
+
+/* Save the original English text/placeholders once */
+document.querySelectorAll('[data-bn]').forEach(el => {
+  el.dataset.en = el.textContent.trim();
+});
+
+document.querySelectorAll('[data-bn-placeholder]').forEach(el => {
+  el.dataset.enPlaceholder = el.getAttribute('placeholder');
+});
+
+function setLanguage(lang){
+  document.documentElement.setAttribute('lang', lang);
+
+  document.querySelectorAll('[data-bn]').forEach(el => {
+    el.textContent = (lang === 'bn') ? el.dataset.bn : el.dataset.en;
+  });
+
+  document.querySelectorAll('[data-bn-placeholder]').forEach(el => {
+    el.setAttribute('placeholder', (lang === 'bn') ? el.dataset.bnPlaceholder : el.dataset.enPlaceholder);
+  });
+
+  document.title = i18n[lang].title;
+  if(metaDesc){
+    metaDesc.setAttribute('content', i18n[lang].desc);
+  }
+
+  langToggle.textContent = i18n[lang].btn;
+  langToggle.setAttribute('aria-label', i18n[lang].label);
+
+  // Re-render dynamic modules in selected language
+  renderEA();
+  renderCalendar();
+  updateDonationSummary();
+
+  try{ localStorage.setItem('siteLang', lang); }catch(e){}
+}
+
+langToggle.addEventListener('click', () => {
+  const current = getCurrentLang();
+  setLanguage(current === 'en' ? 'bn' : 'en');
+});
+
+/* Initial render & restore saved language */
+(function(){
+  let savedLang = 'en';
+  try{
+    if(localStorage.getItem('siteLang') === 'bn') savedLang = 'bn';
+  }catch(e){}
+  if(savedLang === 'bn'){
+    setLanguage('bn');
+  }else{
+    renderEA();
+    renderCalendar();
+    updateDonationSummary();
+  }
+})();
+
+/* =========================================================
+   10. NAVBAR SCROLL & ACTIVE SECTION HIGHLIGHTING
+========================================================= */
+const siteHeader = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  siteHeader.classList.toggle('scrolled', window.scrollY > 20);
+}, {passive: true});
+
+const navAnchors = document.querySelectorAll('.nav-links a');
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      navAnchors.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+      });
+    }
+  });
+}, {rootMargin: '-38% 0px -55% 0px'});
+
+navAnchors.forEach(a => {
+  const target = document.querySelector(a.getAttribute('href'));
+  if(target) spy.observe(target);
+});
 </script>
 
 </body>
