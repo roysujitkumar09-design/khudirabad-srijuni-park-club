@@ -27,12 +27,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     --bg:#f5f8fb;
     --text:#333;
     --shadow:0 10px 30px rgba(0,0,0,.15);
+
+    /* Light mode surface colors */
+    --card-bg:#ffffff;
+    --input-bg:#ffffff;
+    --border:#dddddd;
+    --accent-text:#1f7a4d;
 }
 
+/* Dark mode */
 .dark-mode{
     --bg:#121212;
     --text:#f1f1f1;
     --white:#1d1d1d;
+
+    --card-bg:#1d1d1d;
+    --input-bg:#262626;
+    --border:#3a3a3a;
+    --accent-text:#3ddc97;
+    --shadow:0 10px 30px rgba(0,0,0,.6);
+    color-scheme:dark;
 }
 
 *{
@@ -52,6 +66,7 @@ body{
     background:var(--bg);
     color:var(--text);
     overflow-x:hidden;
+    transition:background .3s,color .3s;
 }
 
 img{
@@ -76,7 +91,7 @@ section{
 
 .section-title h2{
     font-size:2.4rem;
-    color:var(--primary);
+    color:var(--accent-text);
 }
 
 .section-title p{
@@ -155,6 +170,9 @@ nav{
 .dark-toggle{
     cursor:pointer;
     color:white;
+    font-size:1.2rem;
+    width:24px;
+    text-align:center;
 }
 
 /* Right-side controls wrapper + language toggle */
@@ -234,7 +252,7 @@ nav{
 .card{
     padding:30px;
     border-radius:20px;
-    background:white;
+    background:var(--card-bg);
     box-shadow:var(--shadow);
     text-align:center;
     transition:.4s;
@@ -246,7 +264,7 @@ nav{
 
 .card i{
     font-size:40px;
-    color:var(--primary);
+    color:var(--accent-text);
     margin-bottom:15px;
 }
 
@@ -287,7 +305,7 @@ nav{
 }
 
 .member-card{
-    background:white;
+    background:var(--card-bg);
     border-radius:20px;
     overflow:hidden;
     text-align:center;
@@ -306,7 +324,7 @@ nav{
 }
 
 .counter-box{
-    background:white;
+    background:var(--card-bg);
     padding:30px;
     border-radius:20px;
     text-align:center;
@@ -315,7 +333,7 @@ nav{
 
 .counter{
     font-size:3rem;
-    color:var(--primary);
+    color:var(--accent-text);
     font-weight:700;
 }
 
@@ -326,7 +344,7 @@ nav{
 }
 
 form{
-    background:white;
+    background:var(--card-bg);
     padding:30px;
     border-radius:20px;
     box-shadow:var(--shadow);
@@ -336,8 +354,10 @@ input,textarea{
     width:100%;
     padding:14px;
     margin:10px 0;
-    border:1px solid #ddd;
+    border:1px solid var(--border);
     border-radius:10px;
+    background:var(--input-bg);
+    color:var(--text);
 }
 
 .map iframe{
@@ -485,7 +505,7 @@ max-width:55%;
 
 <div class="nav-controls">
 <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">বাংলা</button>
-<i class="fas fa-moon dark-toggle" id="darkMode"></i>
+<i class="fas fa-moon dark-toggle" id="darkMode" role="button" tabindex="0" aria-label="Toggle light and dark mode" title="Switch to dark mode"></i>
 <i class="fas fa-bars menu-btn" id="menuBtn"></i>
 </div>
 
@@ -814,9 +834,49 @@ menuBtn.onclick=()=>{
 navLinks.classList.toggle('active');
 }
 
-document.getElementById('darkMode').addEventListener('click',()=>{
-document.body.classList.toggle('dark-mode');
+/* ===== Light / Dark mode ===== */
+
+const themeToggle=document.getElementById('darkMode');
+
+function setTheme(mode){
+
+document.body.classList.toggle('dark-mode',mode==='dark');
+
+/* Moon icon in light mode, sun icon in dark mode */
+themeToggle.classList.toggle('fa-moon',mode!=='dark');
+themeToggle.classList.toggle('fa-sun',mode==='dark');
+
+themeToggle.setAttribute('title',mode==='dark'?'Switch to light mode':'Switch to dark mode');
+
+try{
+localStorage.setItem('siteTheme',mode);
+}catch(e){}
+
+}
+
+themeToggle.addEventListener('click',()=>{
+setTheme(document.body.classList.contains('dark-mode')?'light':'dark');
 });
+
+themeToggle.addEventListener('keydown',e=>{
+if(e.key==='Enter'||e.key===' '){
+e.preventDefault();
+themeToggle.click();
+}
+});
+
+/* Restore saved theme, otherwise follow the device setting */
+(function(){
+let saved=null;
+try{
+saved=localStorage.getItem('siteTheme');
+}catch(e){}
+if(saved==='dark'||saved==='light'){
+setTheme(saved);
+}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){
+setTheme('dark');
+}
+})();
 
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
