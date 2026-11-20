@@ -150,6 +150,22 @@ nav{
     font-size:1.1rem;
 }
 
+/* Club logo image next to the club name */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-img{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    background:#fff;
+}
+
 .nav-links{
     display:flex;
     gap:25px;
@@ -315,6 +331,16 @@ nav{
 .member-card img{
     height:250px;
     object-fit:cover;
+}
+
+/* Committee member phone numbers */
+.member-card a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.member-card p:last-child{
+    padding-bottom:20px;
 }
 
 .counter-grid{
@@ -529,7 +555,10 @@ margin-right:auto;
 
 <header>
 <nav>
-<div class="logo" data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</div>
+<div class="logo">
+<img class="logo-img" src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/club%20Logo.jpg" alt="Club Logo">
+<span data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</span>
+</div>
 
 <div class="nav-links" id="navLinks">
 <a href="#about" data-bn="পরিচিতি">About</a>
@@ -596,6 +625,11 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="card animate">
 <i class="fas fa-book"></i>
 <h3 data-bn="সরস্বতী পূজা">Saraswati Puja</h3>
+</div>
+
+<div class="card animate">
+<i class="fas fa-fire"></i>
+<h3 data-bn="কালীপূজা">Kali Puja</h3>
 </div>
 
 <div class="card animate">
@@ -688,51 +722,24 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="members">
 
 <div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/32.jpg">
-<h3 data-bn="সুভাষ চন্দ্র দাস">Subhash Chandra Das</h3>
+<img src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/Koushik.jpg" alt="Koushik Roy">
+<h3 data-bn="কৌশিক রায়">Koushik Roy</h3>
 <p data-bn="সভাপতি">President</p>
+<p><a href="tel:+918910781182">📞 +91 89107 81182</a></p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/55.jpg">
-<h3 data-bn="অমিত রায়">Amit Roy</h3>
-<p data-bn="সহ-সভাপতি">Vice President</p>
-</div>
-
-<div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/61.jpg">
-<h3 data-bn="সঞ্জীব মণ্ডল">Sanjib Mondal</h3>
-<p data-bn="সম্পাদক">Secretary</p>
-</div>
-
-<div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/75.jpg">
-<h3 data-bn="দেবাশিস ঘোষ">Debashis Ghosh</h3>
-<p data-bn="সহ-সম্পাদক">Assistant Secretary</p>
-</div>
-
-<div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/80.jpg">
-<h3 data-bn="প্রসেনজিৎ দে">Prasenjit Dey</h3>
-<p data-bn="কোষাধ্যক্ষ">Treasurer</p>
-</div>
-
-<div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/11.jpg">
-<h3 data-bn="সদস্য ১">Member 1</h3>
+<h3 data-bn="দীপক সিং">Dipak Singh</h3>
 <p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
+<p><a href="tel:+918981395629">📞 +91 89813 95629</a></p>
 </div>
 
 <div class="member-card">
-<img src="https://randomuser.me/api/portraits/women/20.jpg">
-<h3 data-bn="সদস্য ২">Member 2</h3>
+<img src="https://raw.githubusercontent.com/roysujitkumar09-design/khudirabad-srijuni-park-club/main/Kayal.jpg" alt="Dushmanta Kayal">
+<h3 data-bn="দুশ্মন্ত কয়াল">Dushmanta Kayal</h3>
 <p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
-</div>
-
-<div class="member-card">
-<img src="https://randomuser.me/api/portraits/men/14.jpg">
-<h3 data-bn="সদস্য ৩">Member 3</h3>
-<p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
+<p><a href="tel:+919163661186">📞 +91 91636 61186</a></p>
 </div>
 
 </div>
