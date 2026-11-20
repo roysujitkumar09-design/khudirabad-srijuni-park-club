@@ -11,6 +11,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- Bengali font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -38,6 +41,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     box-sizing:border-box;
     scroll-behavior:smooth;
     font-family:'Poppins',sans-serif;
+}
+
+/* Bengali font when Bengali is active (icons excluded) */
+html[lang="bn"] *:not(i){
+    font-family:'Noto Sans Bengali','Poppins',sans-serif;
 }
 
 body{
@@ -147,6 +155,31 @@ nav{
 .dark-toggle{
     cursor:pointer;
     color:white;
+}
+
+/* Right-side controls wrapper + language toggle */
+.nav-controls{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.lang-toggle{
+    background:transparent;
+    color:white;
+    border:1.5px solid rgba(255,255,255,.7);
+    border-radius:50px;
+    padding:5px 14px;
+    font-size:.85rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    white-space:nowrap;
+}
+
+.lang-toggle:hover{
+    background:var(--primary);
+    border-color:var(--primary);
 }
 
 .hero{
@@ -415,6 +448,21 @@ display:block;
 grid-template-columns:1fr;
 }
 
+/* Mobile tweaks for the language toggle */
+.nav-controls{
+gap:10px;
+}
+
+.lang-toggle{
+padding:4px 10px;
+font-size:.8rem;
+}
+
+.logo{
+font-size:.95rem;
+max-width:55%;
+}
+
 }
 
 </style>
@@ -423,19 +471,20 @@ grid-template-columns:1fr;
 
 <header>
 <nav>
-<div class="logo">2 No. Khudirabad Srijuni Park Club</div>
+<div class="logo" data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</div>
 
 <div class="nav-links" id="navLinks">
-<a href="#about">About</a>
-<a href="#activities">Activities</a>
-<a href="#events">Events</a>
-<a href="#gallery">Gallery</a>
-<a href="#members">Committee</a>
-<a href="#membership">Membership</a>
-<a href="#contact">Contact</a>
+<a href="#about" data-bn="পরিচিতি">About</a>
+<a href="#activities" data-bn="কার্যক্রম">Activities</a>
+<a href="#events" data-bn="অনুষ্ঠান">Events</a>
+<a href="#gallery" data-bn="গ্যালারি">Gallery</a>
+<a href="#members" data-bn="কমিটি">Committee</a>
+<a href="#membership" data-bn="সদস্যপদ">Membership</a>
+<a href="#contact" data-bn="যোগাযোগ">Contact</a>
 </div>
 
-<div>
+<div class="nav-controls">
+<button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">বাংলা</button>
 <i class="fas fa-moon dark-toggle" id="darkMode"></i>
 <i class="fas fa-bars menu-btn" id="menuBtn"></i>
 </div>
@@ -446,13 +495,13 @@ grid-template-columns:1fr;
 <section class="hero">
 <div class="container hero-content">
 
-<h1>2 No. Khudirabad Srijuni Park Club</h1>
+<h1 data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</h1>
 
-<p>Unity • Culture • Community Service</p>
+<p data-bn="ঐক্য • সংস্কৃতি • সমাজসেবা">Unity • Culture • Community Service</p>
 
 <div class="hero-buttons">
-<a href="#membership" class="btn btn-primary">Become a Member</a>
-<a href="#events" class="btn btn-secondary">Upcoming Events</a>
+<a href="#membership" class="btn btn-primary" data-bn="সদস্য হোন">Become a Member</a>
+<a href="#events" class="btn btn-secondary" data-bn="আসন্ন অনুষ্ঠানসমূহ">Upcoming Events</a>
 </div>
 
 </div>
@@ -461,11 +510,11 @@ grid-template-columns:1fr;
 <section id="about">
 <div class="container">
 <div class="section-title">
-<h2>About Club</h2>
+<h2 data-bn="ক্লাব সম্পর্কে">About Club</h2>
 </div>
 
 <div class="about-card glass animate">
-<p>
+<p data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাবে আপনাকে স্বাগতম। ক্লাবটি পশ্চিমবঙ্গের ভগবানপুরের শ্রীজনি পার্ক রোডে অবস্থিত। আমাদের ক্লাব সম্প্রদায়ের ঐক্য, সাংস্কৃতিক ঐতিহ্য, ক্রীড়া কার্যক্রম, সামাজিক কল্যাণমূলক কর্মসূচি, রক্তদান শিবির এবং উৎসব উদযাপনকে এগিয়ে নিতে নিবেদিত। আমরা সকল প্রজন্মের জন্য এলাকার বাসিন্দাদের একত্রিত করে একটি শক্তিশালী ও প্রাণবন্ত সমাজ গড়ে তুলতে সচেষ্ট।">
 Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bhagabanpur, West Bengal. Our club is dedicated to promoting community unity, cultural heritage, sports activities, social welfare programs, blood donation camps, and festive celebrations. We strive to bring residents together and create a stronger, more vibrant community for all generations.
 </p>
 </div>
@@ -476,39 +525,39 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Activities</h2>
+<h2 data-bn="কার্যক্রম">Activities</h2>
 </div>
 
 <div class="grid activities-grid">
 
 <div class="card animate">
 <i class="fas fa-gopuram"></i>
-<h3>Durga Puja Celebration</h3>
+<h3 data-bn="দুর্গাপূজা উদযাপন">Durga Puja Celebration</h3>
 </div>
 
 <div class="card animate">
 <i class="fas fa-book"></i>
-<h3>Saraswati Puja</h3>
+<h3 data-bn="সরস্বতী পূজা">Saraswati Puja</h3>
 </div>
 
 <div class="card animate">
 <i class="fas fa-futbol"></i>
-<h3>Sports Tournament</h3>
+<h3 data-bn="ক্রীড়া প্রতিযোগিতা">Sports Tournament</h3>
 </div>
 
 <div class="card animate">
 <i class="fas fa-heartbeat"></i>
-<h3>Blood Donation Camp</h3>
+<h3 data-bn="রক্তদান শিবির">Blood Donation Camp</h3>
 </div>
 
 <div class="card animate">
 <i class="fas fa-music"></i>
-<h3>Cultural Programs</h3>
+<h3 data-bn="সাংস্কৃতিক অনুষ্ঠান">Cultural Programs</h3>
 </div>
 
 <div class="card animate">
 <i class="fas fa-hands-helping"></i>
-<h3>Community Welfare Activities</h3>
+<h3 data-bn="সমাজকল্যাণমূলক কার্যক্রম">Community Welfare Activities</h3>
 </div>
 
 </div>
@@ -520,29 +569,29 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Upcoming Events</h2>
+<h2 data-bn="আসন্ন অনুষ্ঠানসমূহ">Upcoming Events</h2>
 </div>
 
 <div class="timeline">
 
 <div class="timeline-item animate">
-<h3>Annual Sports Tournament</h3>
-<p>January</p>
+<h3 data-bn="বার্ষিক ক্রীড়া প্রতিযোগিতা">Annual Sports Tournament</h3>
+<p data-bn="জানুয়ারি">January</p>
 </div>
 
 <div class="timeline-item animate">
-<h3>Blood Donation Campaign</h3>
-<p>March</p>
+<h3 data-bn="রক্তদান অভিযান">Blood Donation Campaign</h3>
+<p data-bn="মার্চ">March</p>
 </div>
 
 <div class="timeline-item animate">
-<h3>Cultural Night</h3>
-<p>July</p>
+<h3 data-bn="সাংস্কৃতিক সন্ধ্যা">Cultural Night</h3>
+<p data-bn="জুলাই">July</p>
 </div>
 
 <div class="timeline-item animate">
-<h3>Durga Puja Celebration</h3>
-<p>October</p>
+<h3 data-bn="দুর্গাপূজা উদযাপন">Durga Puja Celebration</h3>
+<p data-bn="অক্টোবর">October</p>
 </div>
 
 </div>
@@ -554,7 +603,7 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Gallery</h2>
+<h2 data-bn="গ্যালারি">Gallery</h2>
 </div>
 
 <div class="gallery">
@@ -575,57 +624,57 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Committee Members</h2>
+<h2 data-bn="কমিটির সদস্যবৃন্দ">Committee Members</h2>
 </div>
 
 <div class="members">
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/32.jpg">
-<h3>Subhash Chandra Das</h3>
-<p>President</p>
+<h3 data-bn="সুভাষ চন্দ্র দাস">Subhash Chandra Das</h3>
+<p data-bn="সভাপতি">President</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/55.jpg">
-<h3>Amit Roy</h3>
-<p>Vice President</p>
+<h3 data-bn="অমিত রায়">Amit Roy</h3>
+<p data-bn="সহ-সভাপতি">Vice President</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/61.jpg">
-<h3>Sanjib Mondal</h3>
-<p>Secretary</p>
+<h3 data-bn="সঞ্জীব মণ্ডল">Sanjib Mondal</h3>
+<p data-bn="সম্পাদক">Secretary</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/75.jpg">
-<h3>Debashis Ghosh</h3>
-<p>Assistant Secretary</p>
+<h3 data-bn="দেবাশিস ঘোষ">Debashis Ghosh</h3>
+<p data-bn="সহ-সম্পাদক">Assistant Secretary</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/80.jpg">
-<h3>Prasenjit Dey</h3>
-<p>Treasurer</p>
+<h3 data-bn="প্রসেনজিৎ দে">Prasenjit Dey</h3>
+<p data-bn="কোষাধ্যক্ষ">Treasurer</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/11.jpg">
-<h3>Member 1</h3>
-<p>Executive Member</p>
+<h3 data-bn="সদস্য ১">Member 1</h3>
+<p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/women/20.jpg">
-<h3>Member 2</h3>
-<p>Executive Member</p>
+<h3 data-bn="সদস্য ২">Member 2</h3>
+<p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
 </div>
 
 <div class="member-card">
 <img src="https://randomuser.me/api/portraits/men/14.jpg">
-<h3>Member 3</h3>
-<p>Executive Member</p>
+<h3 data-bn="সদস্য ৩">Member 3</h3>
+<p data-bn="কার্যনির্বাহী সদস্য">Executive Member</p>
 </div>
 
 </div>
@@ -637,21 +686,21 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Membership Benefits</h2>
+<h2 data-bn="সদস্যপদের সুবিধা">Membership Benefits</h2>
 </div>
 
 <div class="grid activities-grid">
 
-<div class="card">Community Participation</div>
-<div class="card">Cultural Activities</div>
-<div class="card">Sports Programs</div>
-<div class="card">Social Networking</div>
-<div class="card">Welfare Initiatives</div>
+<div class="card" data-bn="সামাজিক অংশগ্রহণ">Community Participation</div>
+<div class="card" data-bn="সাংস্কৃতিক কার্যক্রম">Cultural Activities</div>
+<div class="card" data-bn="ক্রীড়া কর্মসূচি">Sports Programs</div>
+<div class="card" data-bn="সামাজিক যোগাযোগ">Social Networking</div>
+<div class="card" data-bn="কল্যাণমূলক উদ্যোগ">Welfare Initiatives</div>
 
 </div>
 
 <center style="margin-top:30px;">
-<a class="btn btn-primary">Apply for Membership</a>
+<a class="btn btn-primary" data-bn="সদস্যপদের জন্য আবেদন করুন">Apply for Membership</a>
 </center>
 
 </div>
@@ -661,29 +710,29 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Achievements</h2>
+<h2 data-bn="অর্জন">Achievements</h2>
 </div>
 
 <div class="counter-grid">
 
 <div class="counter-box">
 <div class="counter" data-target="500">0</div>
-<p>Active Members</p>
+<p data-bn="সক্রিয় সদস্য">Active Members</p>
 </div>
 
 <div class="counter-box">
 <div class="counter" data-target="120">0</div>
-<p>Community Events</p>
+<p data-bn="সামাজিক অনুষ্ঠান">Community Events</p>
 </div>
 
 <div class="counter-box">
 <div class="counter" data-target="80">0</div>
-<p>Social Programs</p>
+<p data-bn="সামাজিক কর্মসূচি">Social Programs</p>
 </div>
 
 <div class="counter-box">
 <div class="counter" data-target="15">0</div>
-<p>Years of Service</p>
+<p data-bn="বছরের সেবা">Years of Service</p>
 </div>
 
 </div>
@@ -695,17 +744,17 @@ Welcome to 2 No. Khudirabad Srijuni Park Club, located at Srijani Park Road, Bha
 <div class="container">
 
 <div class="section-title">
-<h2>Contact Us</h2>
+<h2 data-bn="যোগাযোগ করুন">Contact Us</h2>
 </div>
 
 <div class="contact-grid">
 
 <form>
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<input type="text" placeholder="Subject">
-<textarea rows="5" placeholder="Message"></textarea>
-<button class="btn btn-primary">Send Message</button>
+<input type="text" placeholder="Your Name" data-bn-placeholder="আপনার নাম">
+<input type="email" placeholder="Your Email" data-bn-placeholder="আপনার ইমেইল">
+<input type="text" placeholder="Subject" data-bn-placeholder="বিষয়">
+<textarea rows="5" placeholder="Message" data-bn-placeholder="বার্তা"></textarea>
+<button class="btn btn-primary" data-bn="বার্তা পাঠান">Send Message</button>
 </form>
 
 <div class="map">
@@ -717,10 +766,10 @@ src="https://maps.google.com/maps?q=Bhagabanpur%20West%20Bengal&t=&z=13&ie=UTF8&
 </div>
 
 <div style="margin-top:30px;text-align:center;">
-<p><strong>Address:</strong> Srijani Park Rd, Bhagabanpur, West Bengal, India</p>
-<p><strong>Phone:</strong> +91 9876543210</p>
-<p><strong>WhatsApp:</strong> +91 9876543210</p>
-<p><strong>Email:</strong> info@srijuniparkclub.org</p>
+<p><strong data-bn="ঠিকানা:">Address:</strong> <span data-bn="শ্রীজনি পার্ক রোড, ভগবানপুর, পশ্চিমবঙ্গ, ভারত">Srijani Park Rd, Bhagabanpur, West Bengal, India</span></p>
+<p><strong data-bn="ফোন:">Phone:</strong> +91 9876543210</p>
+<p><strong data-bn="হোয়াটসঅ্যাপ:">WhatsApp:</strong> +91 9876543210</p>
+<p><strong data-bn="ইমেইল:">Email:</strong> info@srijuniparkclub.org</p>
 </div>
 
 </div>
@@ -728,7 +777,7 @@ src="https://maps.google.com/maps?q=Bhagabanpur%20West%20Bengal&t=&z=13&ie=UTF8&
 
 <footer>
 
-<h3>2 No. Khudirabad Srijuni Park Club</h3>
+<h3 data-bn="২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব">2 No. Khudirabad Srijuni Park Club</h3>
 
 <div class="socials">
 
@@ -738,9 +787,9 @@ src="https://maps.google.com/maps?q=Bhagabanpur%20West%20Bengal&t=&z=13&ie=UTF8&
 
 </div>
 
-<p>Email: info@srijuniparkclub.org</p>
+<p><span data-bn="ইমেইল:">Email:</span> info@srijuniparkclub.org</p>
 
-<p>© 2026 All Rights Reserved.</p>
+<p data-bn="© ২০২৬ সর্বস্বত্ব সংরক্ষিত।">© 2026 All Rights Reserved.</p>
 
 </footer>
 
@@ -815,6 +864,74 @@ lightboxImg.src=img.src;
 lightbox.addEventListener('click',()=>{
 lightbox.style.display='none';
 });
+
+/* ===== Bilingual (English / Bengali) support ===== */
+
+const langToggle=document.getElementById('langToggle');
+const metaDesc=document.querySelector('meta[name="description"]');
+
+const i18n={
+en:{
+title:'2 No. Khudirabad Srijuni Park Club',
+desc:'2 No. Khudirabad Srijuni Park Club - Unity, Culture and Community Service',
+btn:'বাংলা',
+label:'Switch to Bengali'
+},
+bn:{
+title:'২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব',
+desc:'২ নং ক্ষুদিরাবাদ শ্রীজুনি পার্ক ক্লাব - ঐক্য, সংস্কৃতি ও সমাজসেবা',
+btn:'English',
+label:'Switch to English'
+}
+};
+
+/* Save the original English text/placeholders once */
+document.querySelectorAll('[data-bn]').forEach(el=>{
+el.dataset.en=el.textContent.trim();
+});
+
+document.querySelectorAll('[data-bn-placeholder]').forEach(el=>{
+el.dataset.enPlaceholder=el.getAttribute('placeholder');
+});
+
+function setLanguage(lang){
+
+document.documentElement.setAttribute('lang',lang);
+
+document.querySelectorAll('[data-bn]').forEach(el=>{
+el.textContent=(lang==='bn')?el.dataset.bn:el.dataset.en;
+});
+
+document.querySelectorAll('[data-bn-placeholder]').forEach(el=>{
+el.setAttribute('placeholder',(lang==='bn')?el.dataset.bnPlaceholder:el.dataset.enPlaceholder);
+});
+
+document.title=i18n[lang].title;
+
+if(metaDesc){
+metaDesc.setAttribute('content',i18n[lang].desc);
+}
+
+langToggle.textContent=i18n[lang].btn;
+langToggle.setAttribute('aria-label',i18n[lang].label);
+
+try{
+localStorage.setItem('siteLang',lang);
+}catch(e){}
+
+}
+
+langToggle.addEventListener('click',()=>{
+const current=document.documentElement.getAttribute('lang')==='bn'?'bn':'en';
+setLanguage(current==='en'?'bn':'en');
+});
+
+/* Restore saved language on load */
+try{
+if(localStorage.getItem('siteLang')==='bn'){
+setLanguage('bn');
+}
+}catch(e){}
 
 </script>
 
